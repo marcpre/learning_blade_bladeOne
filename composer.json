@@ -2,11 +2,12 @@
     "name": "marcus/learning_blade_blade-one",
     "authors": [
         {
-            "name": "marcpre",
-            "email": "marcus.presich@gmail.com"
+            "name": "",
+            "email": ""
         }
     ],
     "require": {
-        "eftec/bladeone": "^3.0"
+        "eftec/bladeone": "^3.0",
+        "davechild/textstatistics": "1.*"
     }
 }

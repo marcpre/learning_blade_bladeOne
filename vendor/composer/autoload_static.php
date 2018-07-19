@@ -20,11 +20,22 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'DaveChild\\TextStatistics' => 
+            array (
+                0 => __DIR__ . '/..' . '/davechild/textstatistics/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

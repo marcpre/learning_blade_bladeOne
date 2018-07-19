@@ -1,4 +1,4 @@
-<h1>Title</h1>
+Title
 {{$Product}}
 {{$Price}}
 {{$Category}}
