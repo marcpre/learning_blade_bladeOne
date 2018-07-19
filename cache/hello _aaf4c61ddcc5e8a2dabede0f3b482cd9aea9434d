@@ -1,3 +1,12 @@
 <h1>Title</h1>
-<?php echo static::e($variable1); ?>
+<?php echo static::e($Product); ?>
 
+<?php echo static::e($Price); ?>
+
+<?php echo static::e($Category); ?>
+
+<?php if($Price > 5): ?>         
+Price is larger than 5        
+<?php else: ?>
+Price is SMALLER    
+<?php endif; ?>
