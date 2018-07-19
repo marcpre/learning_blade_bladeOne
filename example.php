@@ -19,8 +19,11 @@ foreach ($rows as $row) {
 print_r($csv[0]);
 
 foreach ($csv as $key => $value) {
-    echo $blade->run("hello",$csv[$key]);
-    echo "######################### \n";
+    $output .= $blade->run("hello",$csv[$key]);
+    $output .= "######################### \n";
+    echo $output;
 }
+
+file_put_contents("./output.txt", $output);
 
 // echo $blade->run("hello",array("variable1"=>"value1"));
