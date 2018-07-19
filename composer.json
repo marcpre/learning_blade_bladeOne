@@ -1,0 +1,12 @@
+{
+    "name": "marcus/learning_blade_blade-one",
+    "authors": [
+        {
+            "name": "marcpre",
+            "email": "marcus.presich@gmail.com"
+        }
+    ],
+    "require": {
+        "eftec/bladeone": "^3.0"
+    }
+}
