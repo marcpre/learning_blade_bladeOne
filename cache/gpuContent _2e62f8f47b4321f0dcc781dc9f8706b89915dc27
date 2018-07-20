@@ -1,0 +1,5 @@
+Title
+<?php echo static::e($price); ?>
+
+<?php echo static::e($id); ?>
+
