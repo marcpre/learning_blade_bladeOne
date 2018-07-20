@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'eftec\\' => array($vendorDir . '/eftec/bladeone/lib'),
+    'Noodlehaus\\' => array($vendorDir . '/hassankhan/config/src'),
 );

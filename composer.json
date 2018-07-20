@@ -2,12 +2,13 @@
     "name": "marcus/learning_blade_blade-one",
     "authors": [
         {
-            "name": "",
-            "email": ""
+            "name": "admin",
+            "email": "admin@admin.com"
         }
     ],
     "require": {
         "eftec/bladeone": "^3.0",
-        "davechild/textstatistics": "1.*"
+        "davechild/textstatistics": "1.*",
+        "hassankhan/config": "^1.0"
     }
 }
