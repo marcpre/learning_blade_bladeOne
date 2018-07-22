@@ -30,9 +30,15 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully \n";
 
-$sql = "SELECT * 
-        FROM wp_ticker 
-        Limit 3;";
+$sql = "SELECT  wp_posts.* 
+        FROM wp_posts  
+        LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND ( 
+             wp_term_relationships.term_taxonomy_id IN (43)
+        ) AND wp_posts.post_type = 'computer-hardware' AND (wp_posts.post_status = 'publish') 
+        GROUP BY wp_posts.ID 
+        ORDER BY wp_posts.post_date 
+        Limit 10;
+        DESC;";
 
 $data = array();
 $result = $conn->query($sql);
@@ -59,9 +65,6 @@ foreach ($data as $key => $value) {
 }
 
 file_put_contents("./GPU_CONTENT_OUTPUT.txt", $output);
-
-// echo $blade->run("hello",array("variable1"=>"value1"));
-
 
 // close mysql connection
 $conn->close();
