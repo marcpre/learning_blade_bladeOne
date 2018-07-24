@@ -1,11 +1,9 @@
 {
     "name": "marcus/learning_blade_blade-one",
-    "authors": [
-        {
-            "name": "admin",
-            "email": "admin@admin.com"
-        }
-    ],
+    "authors": [{
+        "name": "admin",
+        "email": "admin@admin.com"
+    }],
     "require": {
         "eftec/bladeone": "^3.0",
         "davechild/textstatistics": "1.*",
