@@ -10,7 +10,7 @@ The Model S11 SiaMaster from Innosilicon was previously under the top 3 miners o
 @endif
 
 <h1><b>Costs</b></h1>
-We assume an overall price per watt of 0.1. Hence we derive a constant 
+We assume an overall price per watt of 0.1. Hence we derive a const
 
 
 ###################
