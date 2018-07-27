@@ -58,7 +58,7 @@ print_r($data[0]);
 
 foreach ($data as $key => $value) {
     print_r($data[$key]);
-    $output .= $blade->run("gpuContent", $data[$key]);
+    $output .= $blade->run("singlePost", $data[$key]);
     $output .= "######################### \n";
     echo $output;
     echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output) . "\n";
