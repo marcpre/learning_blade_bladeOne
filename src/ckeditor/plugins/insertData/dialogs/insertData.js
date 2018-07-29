@@ -16,23 +16,22 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 				// The tab content.
 				elements: [{
 						// Text input field for the insertData text.
-						type: 'text',
+						type: 'select',
 						id: 'insertData',
 						label: 'Element',
+						items: [
+							['if'],
+							['elseif'],
+							['else'],
+							['endif']
+						],
+						'default': 'if',
 
-						// Validation checking whether the field is not empty.
-						validate: CKEDITOR.dialog.validate.notEmpty("InsertData field cannot be empty."),
-
-						// Called by the main setupContent method call on dialog initialization.
-						setup: function (element) {
-							this.setValue(element.getText());
-						},
-
-						// Called by the main commitContent method call on dialog confirmation.
-						commit: function (element) {
-							element.setText(this.getValue());
+						onChange: function (api) {
+							// this = CKEDITOR.ui.dialog.select
+							alert('Current value: ' + this.getValue());
 						}
-				},
+					},
 					{
 						// Text input field for the insertData title (explanation).
 						type: 'text',
@@ -50,7 +49,7 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 							element.setAttribute("title", this.getValue());
 						}
 					}
-				
+
 				]
 			},
 
