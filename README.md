@@ -13,3 +13,8 @@
 
 * Cryptocurrency analysis reports
 * Product reports
+
+
+## CKEDITOR
+
+[JSFiddle- CKEditor with Plugin](https://codepen.io/anon/pen/ZjaxxZ?editors=1010)
