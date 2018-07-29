@@ -20,12 +20,19 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 						id: 'insertData',
 						label: 'Element',
 						items: [
-							['if'],
-							['elseif'],
-							['else'],
-							['endif']
+							['{{ $title }}'],
+							['{{ $model }}'],
+							['{{ $example }}']
 						],
-						'default': 'if',
+						'default': '',
+
+						// https://stackoverflow.com/questions/24840935/ckeditor-4-add-dynamic-select-element-in-plugin-dialog
+						onLoad: function (widget) {
+							var selectList = this;
+							var text = this.CKEDITOR.instances.contentDetails.getData();
+							console.log("text " + text)
+							// filter for all va
+						},
 
 						onChange: function (api) {
 							// this = CKEDITOR.ui.dialog.select
