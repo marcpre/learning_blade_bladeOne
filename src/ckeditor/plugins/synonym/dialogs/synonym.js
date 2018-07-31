@@ -25,8 +25,8 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 						validate: CKEDITOR.dialog.validate.notEmpty("Element field cannot be empty."),
 
 						// Called by the main setupContent method call on dialog initialization.
-						setup: function (element) {
-							element.setValue(editor.getSelection().getSelectedText());
+						setup: function( element ) {
+							this.setValue( element.getText() );
 						},
 
 						// Called by the main commitContent method call on dialog confirmation.
