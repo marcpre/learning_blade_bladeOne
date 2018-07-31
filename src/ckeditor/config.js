@@ -36,7 +36,8 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 	
-	config.extraPlugins = 'synonym,insertData';
+	// My own plugins
+	config.extraPlugins = 'synonym,insertData,abbr';
 	
 	config.allowedContent = true;
 

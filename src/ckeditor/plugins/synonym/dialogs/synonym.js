@@ -24,8 +24,10 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 						validate: CKEDITOR.dialog.validate.notEmpty("Synonym field cannot be empty."),
 
 						// Called by the main setupContent method call on dialog initialization.
-						setup: function (element) {
-							this.setValue(element.getText());
+						onLoad: function (element) {
+							console.log("lolo1")
+							console.log(element)
+							this.setValue(editor.getSelection().getSelectedText());
 						},
 
 						// Called by the main commitContent method call on dialog confirmation.
@@ -50,42 +52,17 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 							element.setAttribute("title", this.getValue());
 						}
 					}
-				
 				]
 			},
-
-			// Definition of the Advanced Settings dialog tab (page).
-			/*{
-				id: 'tab-adv',
-				label: 'Advanced Settings',
-				elements: [{
-					// Another text field for the abbr element id.
-					type: 'text',
-					id: 'id',
-					label: 'Id',
-
-					// Called by the main setupContent method call on dialog initialization.
-					setup: function (element) {
-						this.setValue(element.getAttribute("id"));
-					},
-
-					// Called by the main commitContent method call on dialog confirmation.
-					commit: function (element) {
-						var id = this.getValue();
-						if (id)
-							element.setAttribute('id', id);
-						else if (!this.insertMode)
-							element.removeAttribute('id');
-					}
-				}]
-			}*/
 		],
 
 		// Invoked when the dialog is loaded.
-		onShow: function () {
+		onShow: function (element) {
 
 			// Get the selection from the editor.
 			var selection = editor.getSelection();
+			console.log(editor.getSelection().getSelectedText())
+			this.setValue(editor.getSelection().getSelectedText());
 
 			// Get the element at the start of the selection.
 			var element = selection.getStartElement();
