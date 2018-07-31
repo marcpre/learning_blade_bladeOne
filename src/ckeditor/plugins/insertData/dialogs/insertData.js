@@ -1,5 +1,3 @@
-var selectedList = []
-
 // Our dialog definition.
 CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 	return {
@@ -21,19 +19,20 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 						type: 'select',
 						id: 'insertData',
 						label: 'Element',
-						items: selectedList,
+						items: [
+							['{{ $title }}'],
+							['{{ $model }}'],
+							['{{ $example }}']
+						],
 						'default': '',
 
 						// https://stackoverflow.com/questions/24840935/ckeditor-4-add-dynamic-select-element-in-plugin-dialog
 						onLoad: function (widget) {
-							var text = CKEDITOR.instances.editor.getData();
-							var selectedList = text.match(/{{\s*\$\w+\s*}}/g)
-							console.log("text: " + text)
-							console.log("selectedList: " + selectedList)
-							// this.items =  selectedList
-							// selectedList = [ 	['{{ $slot }}'], 	['{{$example }}'], 	['{{ $Product2}}'], 	['{{$category1 }}'] ]
+							var selectList = this;
+							var text = this.CKEDITOR.instances.contentDetails.getData();
+							console.log("text " + text)
+							// filter for all va
 						},
-
 
 						onChange: function (api) {
 							// this = CKEDITOR.ui.dialog.select

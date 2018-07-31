@@ -40,4 +40,6 @@ CKEDITOR.editorConfig = function( config ) {
 	
 	config.allowedContent = true;
 
+	config.contentsCss = CKEDITOR.getUrl('./samples/css/myStyle.css');
+	
 };
