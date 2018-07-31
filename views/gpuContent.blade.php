@@ -1,10 +1,18 @@
 The Ultimative Guide for ALL {{$company}}-Miners with Profitability Estimates
 ------------------------------------------------------------------------------
-{{$company}} has currently {{$numberOfMiners}} on the Market. The 
+{{$company}} has currently {{$numberOfMiners}} on the Market. 
+@if (count($listOfAlgorithms) === 1)
+    They focus on the following algorithms: {{listOfAlgorithms}}. 
+@elseif (count($listOfAlgorithms) === 2)    
+    On the one hand the {{$company}} supports the algorithm {{listOfAlgorithms}} and on the other hand you can buy miner that support {{listOfAlgorithms}}. 
+@else
+   {{$company}} only supports one single algorithm,  {{listOfAlgorithms}}
+@endif
+The algorithm that the miner uses is an effective indicator to show how profitable certain coins are going to be.
 
+Find below an overview table, which coins are supported. Please note that this is a current selection as of {{$today}}:
 
-
-
+<h1><b>Overview of algorithm and the coins that it supports</b></h1>
 
 <h2>How Profitability Will The Miners Be?</h2>
 
@@ -29,11 +37,12 @@ You can find below a list of the miners that have the shortest payback time:
 
 <h1><b> TABLE OF MINERS WITH PAYBACK TIME</b></h1>
 
+If you buy miner {{$miner with the highest payback time}} today, at the current price of Bitcoin - BTC = {{$btcPrice}}, you will make your money back in {{$days}} with a daily profit of {{$dailyProfitOfMiner}}.
 
 ...
 
 <h1>Conclusion</h1>
-
+As you can see above as of today - {{$today}} - the current mines are highly profitable. Find below a detailed 
 
 <h2>Sources:</h2>
 

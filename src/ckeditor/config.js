@@ -37,5 +37,7 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 	
 	config.extraPlugins = 'synonym,insertData';
+	
+	config.allowedContent = true;
 
 };
