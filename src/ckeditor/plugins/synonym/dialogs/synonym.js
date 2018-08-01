@@ -9,7 +9,7 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 
 		// Dialog window content definition.
 		contents: [{
-				// Definition of the Basic Settings dialog tab (page).
+				// Definition of the B asic Settings dialog tab (page).
 				id: 'tab-basic',
 				label: 'Basic Settings',
 
@@ -51,18 +51,12 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 							element.setAttribute("title", this.getValue());
 						}
 					}
-<<<<<<< HEAD
-=======
 
->>>>>>> 4dc703c91e79d631493671c778c3310dc7bf9ada
 				]
 			},
 		],
 
 		// Invoked when the dialog is loaded.
-<<<<<<< HEAD
-		onShow: function (element) {
-=======
 		onShow: function () {
 			// console.log(element)
 			// set text in dialog
@@ -84,12 +78,9 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 
 			// console.log("selectedText")
 			// console.log(selectedText)
->>>>>>> 4dc703c91e79d631493671c778c3310dc7bf9ada
 
 			// Get the selection from the editor.
 			var selection = editor.getSelection();
-			console.log(editor.getSelection().getSelectedText())
-			this.setValue(editor.getSelection().getSelectedText());
 
 			// Get the element at the start of the selection.
 			var element = selection.getStartElement();
