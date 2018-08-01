@@ -41,10 +41,13 @@
       self.initialize = function () {
 				var $container = options.dialogsInBody ? $(document.body) : $editor;
 
-				var body = '<div class="form-group row-fluid">' +
-						'<h2>minimal dialog body</h2>' +
-						'</div>';
-				var footer = '<button href="#" class="btn btn-primary ext-synonym-btn">OK</button>';
+				var body = '<div class="form-group">' +
+                    '<label>Element</label>' +
+                    '<input id="input-autocomplete" class="form-control" type="text"/>' +
+                    '</div>' +
+                    '<label>Synonym</label>' +
+                    '<input id="input-autocomplete" class="form-control" type="text" placeholder="Insert your synonym" />'
+                var footer = '<button href="#" class="btn btn-primary ext-synonym-btn">OK</button>';
 
 				self.$dialog = ui.dialog({
 					title: 'minimal dialog title',
@@ -52,7 +55,6 @@
 					body: body,
 					footer: footer
 				}).render().appendTo($container);
-				
       };
 
       // This methods will be called when editor is destroyed by $('..').summernote('destroy');
