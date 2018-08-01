@@ -19,22 +19,21 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 						type: 'text',
 						id: 'synonym',
 						label: 'Element',
+						'default': '',
 
 						// Validation checking whether the field is not empty.
-						validate: CKEDITOR.dialog.validate.notEmpty("Synonym field cannot be empty."),
+						validate: CKEDITOR.dialog.validate.notEmpty("Element field cannot be empty."),
 
 						// Called by the main setupContent method call on dialog initialization.
-						onLoad: function (element) {
-							console.log("lolo1")
-							console.log(element)
-							this.setValue(editor.getSelection().getSelectedText());
+						setup: function( element ) {
+							this.setValue( element.getText() );
 						},
 
 						// Called by the main commitContent method call on dialog confirmation.
 						commit: function (element) {
 							element.setText(this.getValue());
 						}
-				},
+					},
 					{
 						// Text input field for the synonym title (explanation).
 						type: 'text',
@@ -52,12 +51,40 @@ CKEDITOR.dialog.add('synonymDialog', function (editor) {
 							element.setAttribute("title", this.getValue());
 						}
 					}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4dc703c91e79d631493671c778c3310dc7bf9ada
 				]
 			},
 		],
 
 		// Invoked when the dialog is loaded.
+<<<<<<< HEAD
 		onShow: function (element) {
+=======
+		onShow: function () {
+			// console.log(element)
+			// set text in dialog
+			var selectedText = editor.getSelection().getSelectedText();
+			var dia = CKEDITOR.dialog.getCurrent();
+			var basicTab = dia.definition.getContents('tab-basic');
+			var synonymField = basicTab.get('synonym');
+			// console.log("synonymField")
+			// console.log(synonymField)
+			// var synonymField = dia.definition.content['0'].elements['0']//.get( 'synonym' )
+			synonymField['default'] = selectedText;
+
+			// console.log(dia)
+			// console.log(dia.definition.getContents( '0' ))
+
+			// var a = this.getParentEditor(),
+			// var b = a.getSelection()
+			// this.setupContent(b)
+
+			// console.log("selectedText")
+			// console.log(selectedText)
+>>>>>>> 4dc703c91e79d631493671c778c3310dc7bf9ada
 
 			// Get the selection from the editor.
 			var selection = editor.getSelection();

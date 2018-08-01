@@ -11,82 +11,61 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 
 		// Dialog window content definition.
 		contents: [{
-				// Definition of the Basic Settings dialog tab (page).
-				id: 'tab-basic',
-				label: 'Basic Settings',
+			// Definition of the Basic Settings dialog tab (page).
+			id: 'tab-basic',
+			label: 'Basic Settings',
 
-				// The tab content.
-				elements: [{
-						// Text input field for the insertData text.
-						type: 'select',
-						id: 'insertData',
-						label: 'Element',
-						items: selectedList,
-						'default': '',
+			// The tab content.
+			elements: [{
+					// Text input field for the insertData text.
+					type: 'select',
+					id: 'insertData',
+					label: 'Element',
+					items: selectedList,
+					'default': '',
 
-						// https://stackoverflow.com/questions/24840935/ckeditor-4-add-dynamic-select-element-in-plugin-dialog
-						onLoad: function (widget) {
-							var text = CKEDITOR.instances.editor.getData();
-							var selectedList = text.match(/{{\s*\$\w+\s*}}/g)
-							console.log("text: " + text)
-							console.log("selectedList: " + selectedList)
-							// this.items =  selectedList
-							// selectedList = [ 	['{{ $slot }}'], 	['{{$example }}'], 	['{{ $Product2}}'], 	['{{$category1 }}'] ]
-						},
+					onShow: function () {
+						var _self = this;
+						var text = CKEDITOR.instances.editor.getData();
+						var selectedList = text.match(/{{\s*\$\w+\s*}}/g)
 
+						_self.clear();
+						_self.add('');
+						selectedList.forEach(function (item) {
+							_self.add(item);
+						});
 
-						onChange: function (api) {
-							// this = CKEDITOR.ui.dialog.select
-							alert('Current value: ' + this.getValue());
-						}
+						//_self.filter( onlyUnique );
 					},
-					{
-						// Text input field for the insertData title (explanation).
-						type: 'text',
-						id: 'title',
-						label: 'InsertDatas',
-						validate: CKEDITOR.dialog.validate.notEmpty("InsertDatas field cannot be empty."),
-
-						// Called by the main setupContent method call on dialog initialization.
-						setup: function (element) {
-							this.setValue(element.getAttribute("title"));
-						},
-
-						// Called by the main commitContent method call on dialog confirmation.
-						commit: function (element) {
-							element.setAttribute("title", this.getValue());
-						}
-					}
-
-				]
-			},
-
-			// Definition of the Advanced Settings dialog tab (page).
-			/*{
-				id: 'tab-adv',
-				label: 'Advanced Settings',
-				elements: [{
-					// Another text field for the abbr element id.
+										
+					onChange: function (api) {
+						// this = CKEDITOR.ui.dialog.select
+						console.log(CKEDITOR.dialog.getCurrent().getContentElement( 'tab-basic', 'title' ).setValue(this.getValue()))
+						//alert('Current value: ' + this.getValue());
+					},
+					
+				},
+				{
+					// Text input field for the insertData title (explanation).
 					type: 'text',
-					id: 'id',
-					label: 'Id',
+					id: 'title',
+					label: 'InsertData',
+					'default': '{{ $  }}',
+					// validate: CKEDITOR.dialog.validate.notEmpty("InsertDatas field cannot be empty."),
 
 					// Called by the main setupContent method call on dialog initialization.
-					setup: function (element) {
-						this.setValue(element.getAttribute("id"));
+					setup: function( element ) {
+						this.setValue( element.getText() );
 					},
 
 					// Called by the main commitContent method call on dialog confirmation.
-					commit: function (element) {
-						var id = this.getValue();
-						if (id)
-							element.setAttribute('id', id);
-						else if (!this.insertMode)
-							element.removeAttribute('id');
+					commit: function( element ) {
+						element.setText( this.getValue() );
 					}
-				}]
-			}*/
-		],
+				}
+
+			]
+		}, ],
 
 		// Invoked when the dialog is loaded.
 		onShow: function () {
@@ -96,19 +75,6 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 
 			// Get the element at the start of the selection.
 			var element = selection.getStartElement();
-
-			// Get the <insertData> element closest to the selection, if it exists.
-			if (element)
-				element = element.getAscendant('insertData', true);
-
-			// Create a new <insertData> element if it does not exist.
-			if (!element || element.getName() != 'insertData') {
-				element = editor.document.createElement('insertData');
-
-				// Flag the insertion mode for later use.
-				this.insertMode = true;
-			} else
-				this.insertMode = false;
 
 			// Store the reference to the <insertData> element in an internal property, for later use.
 			this.element = element;
@@ -121,15 +87,13 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 		// This method is invoked once a user clicks the OK button, confirming the dialog.
 		onOk: function () {
 
-			// Create a new <insertData> element.
-			var insertData = this.element;
+			var abbr = this.element;
+			console.log("abbr")
+			console.log(abbr)
+            this.commitContent( abbr );
 
-			// Invoke the commit methods of all dialog window elements, so the <insertData> element gets modified.
-			this.commitContent(insertData);
-
-			// Finally, if in insert mode, insert the element into the editor at the caret position.
-			if (this.insertMode)
-				editor.insertElement(insertData);
+            if ( this.insertMode )
+                editor.insertElement( abbr );
 		}
 	};
 });
