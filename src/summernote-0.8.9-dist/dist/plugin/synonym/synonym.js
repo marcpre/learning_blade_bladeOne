@@ -30,8 +30,8 @@
       // add context menu button
       context.memo('button.synonym', function () {
         return ui.button({
-          contents: '<i class="note-icon-lightbulb">',
-          tooltip: 'mini dialog',
+          contents: '<i class="fa fa-snowflake-o">',
+          tooltip: 'Create Synonym',
           click: context.createInvokeHandler('synonym.showDialog')
         }).render();
       });
@@ -43,7 +43,7 @@
 
 				var body = '<div class="form-group">' +
                     '<label>Element</label>' +
-                    '<input id="input-autocomplete" class="form-control" type="text"/>' +
+                    '<input id="input-element" class="form-control" type="text"/>' +
                     '</div>' +
                     '<label>Synonym</label>' +
                     '<input id="input-autocomplete" class="form-control" type="text" placeholder="Insert your synonym" />'
@@ -85,7 +85,11 @@
 	    self.openDialog = function () {
 				return $.Deferred(function (deferred) {
 					var $dialogBtn = self.$dialog.find('.ext-synonym-btn');
-					
+          
+          var selectedText = $.selection()
+          $('#input-element').val(selectedText);
+          console.log("show dialog: " + selectedText)
+          
 					ui.onDialogShown(self.$dialog, function () {
 						context.triggerEvent('dialog.shown');
 

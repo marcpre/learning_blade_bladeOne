@@ -50,7 +50,7 @@ CKEDITOR.dialog.add('insertDataDialog', function (editor) {
 					type: 'text',
 					id: 'title',
 					label: 'InsertData',
-					'default': '{{ $  }}',
+					// 'default': '{{ $  }}',
 					// validate: CKEDITOR.dialog.validate.notEmpty("InsertDatas field cannot be empty."),
 
 					// Called by the main setupContent method call on dialog initialization.
