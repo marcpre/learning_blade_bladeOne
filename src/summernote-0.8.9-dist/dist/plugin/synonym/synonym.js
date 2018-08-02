@@ -48,7 +48,7 @@
                     '<input id="input-element" class="form-control" type="text"/>' +
                     '</div>' +
                     '<label>Synonym</label>' +
-                    '<input id="input-autocomplete" class="form-control" type="text" placeholder="Insert your synonym" />'
+                    '<input id="input-synonym" class="form-control" type="text" placeholder="Insert your synonym" />'
                 var footer = '<button href="#" class="btn btn-primary ext-synonym-btn">OK</button>';
 
                 self.$dialog = ui.dialog({
@@ -75,7 +75,7 @@
                         context.invoke('editor.restoreRange');
                         self.insertToEditor(data);
                         // do something with dialogData
-                        console.log("dialog returned: ", dialogData)
+                        console.log("dialog returned: ", data)
                         // ...
                     })
                     .fail(function() {
@@ -87,6 +87,8 @@
             self.openDialog = function() {
                 return $.Deferred(function(deferred) {
                     var $dialogBtn = self.$dialog.find('.ext-synonym-btn');
+                    var $elemInput = self.$dialog.find('#input-element')[0];
+                    var $synonymInput = self.$dialog.find('#input-synonym')[0];
 
                     var selectedText = $.selection()
                     $('#input-element').val(selectedText);
@@ -99,7 +101,10 @@
                             .click(function(event) {
                                 event.preventDefault();
 
-                                deferred.resolve({ action: 'mini dialog OK clicked...' });
+                                deferred.resolve({ 
+                                    element: $elemInput.value, 
+                                    synonym: $synonymInput.value
+                                });
                             });
                     });
 
@@ -116,9 +121,14 @@
             };
 
             //text that is written to the editor
-            this.insertToEditor = function(placeName) {
-                var $elem = $('<synonym>');
+            this.insertToEditor = function(data) {
+                console.log("synonym: " + data.synonym)
+                
+                var $elem = $('<synonym>', {
+                    words: data.synonym
+                });;
 
+                $elem.text(data.element)
                 /*
                 $div.css({
                     'position': 'relative',
