@@ -19,7 +19,7 @@
         /**
          * @param {Object} context - context object has status of editor.
          */
-        'synonym': function(context) {
+        'insertData': function(context) {
             var self = this;
 
             // ui has renders to build ui elements.
@@ -30,11 +30,11 @@
             var options = context.options;
 
             // add context menu button
-            context.memo('button.synonym', function() {
+            context.memo('button.insertData', function() {
                 return ui.button({
-                    contents: '<i class="fa fa-snowflake-o">',
-                    tooltip: 'Create Synonym',
-                    click: context.createInvokeHandler('synonym.showDialog')
+                    contents: '<i class="fa fa-database">',
+                    tooltip: 'Create InsertData',
+                    click: context.createInvokeHandler('insertData.showDialog')
                 }).render();
             });
 
@@ -44,15 +44,15 @@
                 var $container = options.dialogsInBody ? $(document.body) : $editor;
 
                 var body = '<div class="form-group">' +
-                    '<label>Element</label>' +
+                    '<label>Select</label>' +
                     '<input id="input-element" class="form-control" type="text"/>' +
                     '</div>' +
-                    '<label>Synonym</label>' +
-                    '<input id="input-synonym" class="form-control" type="text" placeholder="Insert your synonym" />'
-                var footer = '<button href="#" class="btn btn-primary ext-synonym-btn">OK</button>';
+                    '<label>InsertData</label>' +
+                    '<input id="input-insertData" class="form-control" type="text" placeholder="Insert your insertData" />'
+                var footer = '<button href="#" class="btn btn-primary ext-insertData-btn">OK</button>';
 
                 self.$dialog = ui.dialog({
-                    title: 'Create Synonym',
+                    title: 'Create InsertData',
                     fade: options.dialogsFade,
                     body: body,
                     footer: footer
@@ -74,7 +74,6 @@
                         ui.hideDialog(self.$dialog);
                         context.invoke('editor.restoreRange');
                         self.insertToEditor(data);
-                        
                         // do something with dialogData
                         console.log("dialog returned: ", data)
                         // ...
@@ -87,9 +86,9 @@
 
             self.openDialog = function() {
                 return $.Deferred(function(deferred) {
-                    var $dialogBtn = self.$dialog.find('.ext-synonym-btn');
+                    var $dialogBtn = self.$dialog.find('.ext-insertData-btn');
                     var $elemInput = self.$dialog.find('#input-element')[0];
-                    var $synonymInput = self.$dialog.find('#input-synonym')[0];
+                    var $insertDataInput = self.$dialog.find('#input-insertData')[0];
 
                     var selectedText = $.selection()
                     $('#input-element').val(selectedText);
@@ -105,7 +104,7 @@
 
                                 deferred.resolve({ 
                                     element: $elemInput.value, 
-                                    synonym: $synonymInput.value
+                                    insertData: $insertDataInput.value
                                 });
                             });
                     });
@@ -124,10 +123,10 @@
 
             //text that is written to the editor
             this.insertToEditor = function(data) {
-                console.log("synonym: " + data.synonym)
+                console.log("insertData: " + data.insertData)
                 
-                var $elem = $('<synonym>', {
-                    words: data.synonym
+                var $elem = $('<insertData>', {
+                    words: data.insertData
                 });;
 
                 $elem.text(data.element)

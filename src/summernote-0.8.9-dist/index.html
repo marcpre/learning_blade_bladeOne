@@ -18,23 +18,17 @@
   <script type="text/javascript" src="./dist/plugin/template/summernote-ext-template.js"></script>
   <script type="text/javascript" src="./dist/plugin/emoji/summernote-ext-emoji-ajax.js"></script>
   <script type="text/javascript" src="./dist/plugin/synonym/synonym.js"></script>
+  <script type="text/javascript" src="./dist/plugin/insertData/insertData.js"></script>
   <script type="text/javascript" src="./dist/js/jquery.selection.js"></script>
-
-
 
   <script type="text/javascript">
     $(document).ready(function() {
-      /*
-      $('.summernote').summernote({
-
-      });
-      */
       $('.summernote').summernote({
         height: 300,
         tabsize: 2,
         toolbar: [
           ['style', ['bold', 'italic', 'underline', 'clear']],
-          ['insert', ['template', 'emoji', 'codeview', 'synonym']]
+          ['insert', ['template', 'emoji', 'codeview', 'synonym', 'insertData']]
         ],
         template: {
           path: './dist/tpls', // path to your template folder
