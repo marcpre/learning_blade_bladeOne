@@ -87,14 +87,15 @@
             self.openDialog = function () {
                 return $.Deferred(function (deferred) {
                     var $dialogBtn = self.$dialog.find('.ext-insertData-btn');
-                    var $elemInput = self.$dialog.find('#input-element')[0];
                     var $insertDataInput = self.$dialog.find('#input-insertData')[0];
 
+                    /*
                     var selectedText = $.selection()
                     $('#input-element').val(selectedText);
+                    */
                     context.invoke('editor.saveRange');
-                    console.log("show dialog: " + selectedText)
-
+                    // console.log("show dialog: " + selectedText)
+                   
                     ui.onDialogShown(self.$dialog, function () {
                         context.triggerEvent('dialog.shown');
 
@@ -103,7 +104,6 @@
                                 event.preventDefault();
 
                                 deferred.resolve({
-                                    element: $elemInput.value,
                                     insertData: $insertDataInput.value
                                 });
                             });
@@ -132,17 +132,18 @@
                 $("#selectBox").select2({
                     width: 'resolve',
                     data: data
-                }).on("select2:select", function(e) {
-                    console.log("change event")
-                    console.log(e)
+                }).on("select2:select", function (e) {
                     var select = e.params.data.text;
-                    console.log(select);
-                    
-                    //add selected element to input data field
-                    $('#input-insertData').val(select)
+
+                    if (select === 'null') {
+                        $('#input-insertData').val('{{ $ }}')
+                    } else {
+                        //add selected element to input data field
+                        $('#input-insertData').val(select)
+                    }
                 });
             }
-            
+
             /*
             this.selectItem = function () {
                 // $('#selectBox').select2();  //initialized
@@ -156,8 +157,8 @@
                     $('#input-insertData').text("test")
                 });
             }
-            */            
-            
+            */
+
             //text that is written to the editor
             this.insertToEditor = function (data) {
                 console.log("insertData: " + data.insertData)
@@ -166,10 +167,13 @@
                     words: data.insertData
                 });;
 
-                $elem.text(data.element)
+                // $('.summernote').summernote('focus');
+                
+                //$elem.text(data.element)
 
                 //$div.html($iframe)
-                context.invoke('editor.insertNode', $elem[0]);
+                // context.invoke('editor.insertNode', $elem[0]);
+                context.invoke('editor.insertText', data.insertData);
                 //$('.note-editable').selection('replace', {text: $elem[0]})
             };
         }
