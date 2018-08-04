@@ -57,9 +57,9 @@
 
         $('.repeater').repeater({
           defaultValues: {
-            'text-input': 'Insert your text',
-            // 'select-input': 'ELSEIF',
-            // 'textarea-input': 'Insert your text',
+            'else-input': '',
+            'select-input': 'ELSE',
+            'else-textarea-input': '',
           },
           show: function () {
             $(this).slideDown();
@@ -78,7 +78,7 @@
         });
 
         window.outerRepeater = $('.outer-repeater').repeater({
-          isFirstItemUndeletable: true,
+          isFirstItemUndeletable: false,
           defaultValues: {
             'text-input': 'outer-default'
           },
@@ -91,7 +91,7 @@
             $(this).slideUp(deleteElement);
           },
           repeaters: [{
-            isFirstItemUndeletable: true,
+            isFirstItemUndeletable: false,
             selector: '.inner-repeater',
             defaultValues: {
               'inner-text-input': 'inner-default'
@@ -128,29 +128,6 @@
         <li style="background-color: lightgreen">insertData</li>
       </ul>
     </div>
-
-    <!-- START -->
-    IF(
-    <input type="text" name="text-input" value="A" />)
-    <input type="text" name="text-input" value="A" />
-    <form action="" class="repeater" enctype="multipart/form-data">
-      <div data-repeater-list="group-a">
-        <div data-repeater-item>
-          <select name="select-input">
-            <option value="A" selected>ELSE</option>
-            <option value="B">ELSEIF</option>
-          </select>
-          (<input type="text" name="text-input" value="A" />)
-          <input type="text" name="text-input" value="A" />
-          <input data-repeater-delete type="button" value="Delete" />
-        </div>
-      </div>
-      <input data-repeater-create type="button" value="Add" />
-      <br/>
-    </form>
-    @ENDIF
-    <!-- START -->
-
   </div>
 </body>
 

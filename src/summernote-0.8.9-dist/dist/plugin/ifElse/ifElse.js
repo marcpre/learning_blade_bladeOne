@@ -42,23 +42,23 @@
                 var $container = options.dialogsInBody ? $(document.body) : $editor;
 
                 var body = '<div class="form-group">' +
-                'IF(<input type="text" name="text-input" placeholder="Condition"/>) <textarea name="textarea-input" placeholder="Insert your text"></textarea>' + 
-                '<form action="" class="repeater form-horizontal well" enctype="multipart/form-data">' +
-                '<div data-repeater-list="group-a">' +
-                '<div data-repeater-item>' +
+                    'IF(<input type="text" name="if-input" placeholder="Condition"/>) <textarea name="if-textarea-input" placeholder="Insert your text"></textarea>' +
+                    '<form action="" class="repeater form-horizontal well" enctype="multipart/form-data">' +
+                    '<div data-repeater-list="elseGroup">' +
+                    '<div data-repeater-item>' +
                     '<select name="select-input">' +
-                        '<option value="ELSEIF" selected>ELSEIF</option>' +
-                        '<option value="ELSE">ELSE</option>' +
-                    '</select>' + 
-                    '(<input type="text" name="text-input" placeholder="Condition" />)' +
-                    '<textarea name="textarea-input" placeholder="Insert your text"></textarea>' +
+                    '<option value="ELSE" selected>ELSE</option>' +
+                    '<option value="ELSEIF" >ELSEIF</option>' +
+                    '</select>' +
+                    '(<input type="text" name="else-condition" placeholder="Condition" />)' +
+                    '<textarea name="else-input-text" placeholder="Insert..."></textarea>' +
                     '<input data-repeater-delete type="button" value="Delete"/>' +
-                '</div>' +
-                '</div>' +
-                '<input data-repeater-create type="button" value="Add"/>' +
-                '<br/>' +
-                '</form>' +
-                '@ENDIF'
+                    '</div>' +
+                    '</div>' +
+                    '<input data-repeater-create type="button" value="Add"/>' +
+                    '<br/>' +
+                    '</form>' +
+                    '@ENDIF'
                 var footer = '<button href="#" class="btn btn-primary ext-ifElse-btn">OK</button>';
 
                 self.$dialog = ui.dialog({
@@ -96,26 +96,30 @@
 
             self.openDialog = function () {
                 return $.Deferred(function (deferred) {
-                    var $dialogBtn = self.$dialog.find('.ext-ifElse-btn');
-                    var $ifElseInput = self.$dialog.find('#input-ifElse')[0];
+                    var $ifElseBtn = self.$dialog.find('.ext-ifElse-btn');
+                    // var $ifElseInput = self.$dialog.find('#input-ifElse')[0];
 
                     context.invoke('editor.saveRange');
-                   
                     ui.onDialogShown(self.$dialog, function () {
                         context.triggerEvent('dialog.shown');
 
-                        $dialogBtn
+                        $ifElseBtn
                             .click(function (event) {
                                 event.preventDefault();
 
+                                var repeaterVals = $('.repeater').repeaterVal();
+
+                                console.log("repeaterVals")
+                                console.log(repeaterVals)
+
                                 deferred.resolve({
-                                    ifElse: $ifElseInput.value
+                                    ifElse: repeaterVals
                                 });
                             });
                     });
 
                     ui.onDialogHidden(self.$dialog, function () {
-                        $dialogBtn.off('click');
+                        $ifElseBtn.off('click');
 
                         if (deferred.state() === 'pending') {
                             deferred.reject();
@@ -125,39 +129,51 @@
                     ui.showDialog(self.$dialog);
                 });
             };
-/*
-            this.fillSelectField = function () {
-                var data = []
-                // var _self = this;
-                var text = $('.note-editable').html()
-                data = text.match(/{{\s*\$\w+\s*}}/g)
-                data.push("null"); // add empty value to array
-                data = data.filter((v, i, a) => a.indexOf(v) === i); // only unique values
+            /*
+                        this.fillSelectField = function () {
+                            var data = []
+                            // var _self = this;
+                            var text = $('.note-editable').html()
+                            data = text.match(/{{\s*\$\w+\s*}}/g)
+                            data.push("null"); // add empty value to array
+                            data = data.filter((v, i, a) => a.indexOf(v) === i); // only unique values
 
-                $("#selectBox").select2({
-                    width: 'resolve',
-                    data: data
-                }).on("select2:select", function (e) {
-                    var select = e.params.data.text;
+                            $("#selectBox").select2({
+                                width: 'resolve',
+                                data: data
+                            }).on("select2:select", function (e) {
+                                var select = e.params.data.text;
 
-                    if (select === 'null') {
-                        $('#input-ifElse').val('{{ $ }}')
-                    } else {
-                        //add selected element to input data field
-                        $('#input-ifElse').val(select)
-                    }
-                });
-            }
-*/
+                                if (select === 'null') {
+                                    $('#input-ifElse').val('{{ $ }}')
+                                } else {
+                                    //add selected element to input data field
+                                    $('#input-ifElse').val(select)
+                                }
+                            });
+                        }
+            */
             //text that is written to the editor
             this.insertToEditor = function (data) {
-                console.log("ifElse: " + data.ifElse)
+                console.log("ifElse: ")
+                const elseData = data.ifElse.elseGroup
 
-                var $elem = $('<ifElse>', {
-                    words: data.ifElse
-                });;
+                let string = ''
+                for (var x in elseData) {
+                    if (elseData[x]['select-input'] === 'ELSEIF') {
+                        string += "@elseif( " + "\"" + elseData[x]['else-condition'] + "\"" + " ) " + elseData[x]['else-input-text'] + " "
+                    }
 
-                context.invoke('editor.insertText', data.ifElse);
+                    if (elseData[x]['select-input'] === 'ELSE') {
+                        string += "@else( " + "\"" + elseData[x]['else-condition'] + "\"" + " ) " + elseData[x]['else-input-text'] + " "
+                    }
+                }
+
+                // var $elem = $('<ifElse>', {
+                //    words: data.ifElse
+                // });;
+
+                context.invoke('editor.insertText', string);
             };
         }
     });
