@@ -17,7 +17,7 @@
         /**
          * @param {Object} context - context object has status of editor.
          */
-        'insertData': function (context) {
+        'ifElse': function (context) {
             var self = this;
 
             // ui has renders to build ui elements.
@@ -28,11 +28,11 @@
             var options = context.options;
 
             // add context menu button
-            context.memo('button.insertData', function () {
+            context.memo('button.ifElse', function () {
                 return ui.button({
-                    contents: '<i class="fa fa-database">',
-                    tooltip: 'Create InsertData',
-                    click: context.createInvokeHandler('insertData.showDialog')
+                    contents: '<i class="fa fa-plus-square-o">',
+                    tooltip: 'Create ifElse',
+                    click: context.createInvokeHandler('ifElse.showDialog')
                 }).render();
             });
 
@@ -45,12 +45,12 @@
                     '<label>Select</label>' +
                     '<select id="selectBox"></select>' +
                     '</div>' +
-                    '<label>InsertData</label>' +
-                    '<input id="input-insertData" class="form-control" type="text" placeholder="Insert your insertData" />'
-                var footer = '<button href="#" class="btn btn-primary ext-insertData-btn">OK</button>';
+                    '<label>ifElse</label>' +
+                    '<input id="input-ifElse" class="form-control" type="text" placeholder="Insert your ifElse" />'
+                var footer = '<button href="#" class="btn btn-primary ext-ifElse-btn">OK</button>';
 
                 self.$dialog = ui.dialog({
-                    title: 'Create InsertData',
+                    title: 'Create ifElse',
                     fade: options.dialogsFade,
                     body: body,
                     footer: footer
@@ -86,8 +86,8 @@
 
             self.openDialog = function () {
                 return $.Deferred(function (deferred) {
-                    var $dialogBtn = self.$dialog.find('.ext-insertData-btn');
-                    var $insertDataInput = self.$dialog.find('#input-insertData')[0];
+                    var $dialogBtn = self.$dialog.find('.ext-ifElse-btn');
+                    var $ifElseInput = self.$dialog.find('#input-ifElse')[0];
 
                     context.invoke('editor.saveRange');
                    
@@ -99,7 +99,7 @@
                                 event.preventDefault();
 
                                 deferred.resolve({
-                                    insertData: $insertDataInput.value
+                                    ifElse: $ifElseInput.value
                                 });
                             });
                     });
@@ -131,23 +131,23 @@
                     var select = e.params.data.text;
 
                     if (select === 'null') {
-                        $('#input-insertData').val('{{ $ }}')
+                        $('#input-ifElse').val('{{ $ }}')
                     } else {
                         //add selected element to input data field
-                        $('#input-insertData').val(select)
+                        $('#input-ifElse').val(select)
                     }
                 });
             }
 
             //text that is written to the editor
             this.insertToEditor = function (data) {
-                console.log("insertData: " + data.insertData)
+                console.log("ifElse: " + data.ifElse)
 
-                var $elem = $('<insertData>', {
-                    words: data.insertData
+                var $elem = $('<ifElse>', {
+                    words: data.ifElse
                 });;
 
-                context.invoke('editor.insertText', data.insertData);
+                context.invoke('editor.insertText', data.ifElse);
             };
         }
     });
