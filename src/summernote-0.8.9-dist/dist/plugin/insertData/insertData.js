@@ -56,6 +56,7 @@
                     footer: footer
                 }).render().appendTo($container);
                 self.fillSelectField();
+                // self.selectItem()
             };
 
             // This methods will be called when editor is destroyed by $('..').summernote('destroy');
@@ -125,14 +126,38 @@
                 // var _self = this;
                 var text = $('.note-editable').html()
                 data = text.match(/{{\s*\$\w+\s*}}/g)
-                var data = data.filter((v, i, a) => a.indexOf(v) === i); 
+                data.push("null"); // add empty value to array
+                data = data.filter((v, i, a) => a.indexOf(v) === i); // only unique values
 
                 $("#selectBox").select2({
                     width: 'resolve',
                     data: data
-                })
+                }).on("select2:select", function(e) {
+                    console.log("change event")
+                    console.log(e)
+                    var select = e.params.data.text;
+                    console.log(select);
+                    
+                    //add selected element to input data field
+                    $('#input-insertData').val(select)
+                });
             }
-
+            
+            /*
+            this.selectItem = function () {
+                // $('#selectBox').select2();  //initialized
+                $('#selectBox').on("change", function(e) {
+                    console.log("event")
+                    console.log(e)
+                    var data = e.params.data;
+                    console.log(data);
+                    
+                    //add selected element to input data field
+                    $('#input-insertData').text("test")
+                });
+            }
+            */            
+            
             //text that is written to the editor
             this.insertToEditor = function (data) {
                 console.log("insertData: " + data.insertData)
@@ -142,27 +167,6 @@
                 });;
 
                 $elem.text(data.element)
-                /*
-                $div.css({
-                    'position': 'relative',
-                    'padding-top': '25px',
-                    'padding-bottom': '56.25%',
-                    'height': '0'
-                });
-            
-                var $iframe = $('<iframe>', {
-                    src: EMBED_URL.replace("PLACE", placeName),
-                    height: '250px'
-                });
-
-                $iframe.css({
-                    'position': 'absolute',
-                    'top': '0',
-                    'left': '0',
-                    'width': '60%',
-                    'height': '60%'
-                }); 
-                */
 
                 //$div.html($iframe)
                 context.invoke('editor.insertNode', $elem[0]);
