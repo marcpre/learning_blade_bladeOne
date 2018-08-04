@@ -42,11 +42,23 @@
                 var $container = options.dialogsInBody ? $(document.body) : $editor;
 
                 var body = '<div class="form-group">' +
-                    '<label>Select</label>' +
-                    '<select id="selectBox"></select>' +
-                    '</div>' +
-                    '<label>ifElse</label>' +
-                    '<input id="input-ifElse" class="form-control" type="text" placeholder="Insert your ifElse" />'
+                'IF(<input type="text" name="text-input" placeholder="Condition"/>) <textarea name="textarea-input" placeholder="Insert your text"></textarea>' + 
+                '<form action="" class="repeater form-horizontal well" enctype="multipart/form-data">' +
+                '<div data-repeater-list="group-a">' +
+                '<div data-repeater-item>' +
+                    '<select name="select-input">' +
+                        '<option value="ELSEIF" selected>ELSEIF</option>' +
+                        '<option value="ELSE">ELSE</option>' +
+                    '</select>' + 
+                    '(<input type="text" name="text-input" placeholder="Condition" />)' +
+                    '<textarea name="textarea-input" placeholder="Insert your text"></textarea>' +
+                    '<input data-repeater-delete type="button" value="Delete"/>' +
+                '</div>' +
+                '</div>' +
+                '<input data-repeater-create type="button" value="Add"/>' +
+                '<br/>' +
+                '</form>' +
+                '@ENDIF'
                 var footer = '<button href="#" class="btn btn-primary ext-ifElse-btn">OK</button>';
 
                 self.$dialog = ui.dialog({
@@ -55,8 +67,6 @@
                     body: body,
                     footer: footer
                 }).render().appendTo($container);
-                self.fillSelectField();
-                // self.selectItem()
             };
 
             // This methods will be called when editor is destroyed by $('..').summernote('destroy');
@@ -115,7 +125,7 @@
                     ui.showDialog(self.$dialog);
                 });
             };
-
+/*
             this.fillSelectField = function () {
                 var data = []
                 // var _self = this;
@@ -138,7 +148,7 @@
                     }
                 });
             }
-
+*/
             //text that is written to the editor
             this.insertToEditor = function (data) {
                 console.log("ifElse: " + data.ifElse)

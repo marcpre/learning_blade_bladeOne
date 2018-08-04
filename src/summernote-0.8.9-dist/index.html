@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pdapHxIh7EYuwy6K7iE41uXVxGCXY0sAjBzaElYGJUrzwodck3Lx6IE2lA0rFREo" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pdapHxIh7EYuwy6K7iE41uXVxGCXY0sAjBzaElYGJUrzwodck3Lx6IE2lA0rFREo"
+    crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="./dist/summernote.css">
   <link rel="stylesheet" href="./dist/css/myStyle.css">
   <link rel="stylesheet" href="./dist/plugin/emoji/summernote-ext-emoji-ajax.css">
@@ -14,7 +16,9 @@
   <title>Summernote</title>
 
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha384-pPttEvTHTuUJ9L2kCoMnNqCRcaMPMVMsWVO+RLaaaYDmfSP5//dP6eKRusbPcqhZ" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="./dist/js/jquery.repeaterField.Config.js"></script> -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha384-pPttEvTHTuUJ9L2kCoMnNqCRcaMPMVMsWVO+RLaaaYDmfSP5//dP6eKRusbPcqhZ"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="./dist/summernote.js"></script>
   <script type="text/javascript" src="./dist/plugin/template/summernote-ext-template.js"></script>
   <script type="text/javascript" src="./dist/plugin/emoji/summernote-ext-emoji-ajax.js"></script>
@@ -22,10 +26,11 @@
   <script type="text/javascript" src="./dist/plugin/insertData/insertData.js"></script>
   <script type="text/javascript" src="./dist/plugin/ifElse/ifElse.js"></script>
   <script type="text/javascript" src="./dist/js/jquery.selection.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-  
+
   <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.summernote').summernote({
         height: 300,
         tabsize: 2,
@@ -47,13 +52,69 @@
           }
         },
       });
+      // repeater field
+      $(document).ready(function () {
+
+        $('.repeater').repeater({
+          defaultValues: {
+            'text-input': 'Insert your text',
+            // 'select-input': 'ELSEIF',
+            // 'textarea-input': 'Insert your text',
+          },
+          show: function () {
+            $(this).slideDown();
+          },
+          hide: function (deleteElement) {
+            /*
+            if(confirm('Are you sure you want to delete this element?')) {
+                $(this).slideUp(deleteElement);
+            }
+            */
+            $(this).slideUp(deleteElement);
+          },
+          ready: function (setIndexes) {
+
+          }
+        });
+
+        window.outerRepeater = $('.outer-repeater').repeater({
+          isFirstItemUndeletable: true,
+          defaultValues: {
+            'text-input': 'outer-default'
+          },
+          show: function () {
+            console.log('outer show');
+            $(this).slideDown();
+          },
+          hide: function (deleteElement) {
+            console.log('outer delete');
+            $(this).slideUp(deleteElement);
+          },
+          repeaters: [{
+            isFirstItemUndeletable: true,
+            selector: '.inner-repeater',
+            defaultValues: {
+              'inner-text-input': 'inner-default'
+            },
+            show: function () {
+              console.log('inner show');
+              $(this).slideDown();
+            },
+            hide: function (deleteElement) {
+              console.log('inner delete');
+              $(this).slideUp(deleteElement);
+            }
+          }]
+        });
+      });
     });
   </script>
 </head>
 
 <body>
   <div class="container">
-    <h4> <i class="note-icon-summernote"></i> Summernote
+    <h4>
+      <i class="note-icon-summernote"></i> Summernote
       <span class="label label-info">Bootstrap v3.3.7</span>
       <span class="label label-success">with Summernote Icons</span>
     </h4>
@@ -67,6 +128,29 @@
         <li style="background-color: lightgreen">insertData</li>
       </ul>
     </div>
+
+    <!-- START -->
+    IF(
+    <input type="text" name="text-input" value="A" />)
+    <input type="text" name="text-input" value="A" />
+    <form action="" class="repeater" enctype="multipart/form-data">
+      <div data-repeater-list="group-a">
+        <div data-repeater-item>
+          <select name="select-input">
+            <option value="A" selected>ELSE</option>
+            <option value="B">ELSEIF</option>
+          </select>
+          (<input type="text" name="text-input" value="A" />)
+          <input type="text" name="text-input" value="A" />
+          <input data-repeater-delete type="button" value="Delete" />
+        </div>
+      </div>
+      <input data-repeater-create type="button" value="Add" />
+      <br/>
+    </form>
+    @ENDIF
+    <!-- START -->
+
   </div>
 </body>
 
