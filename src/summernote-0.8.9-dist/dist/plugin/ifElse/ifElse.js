@@ -176,7 +176,7 @@
                     }
 
                     if (elseData[x]['select-input'] === 'ELSE') {
-                        string += "@else( " + "\"" + elseData[x]['else-condition'] + "\"" + " ) " + elseData[x]['else-input-text'] + " "
+                        string += "@else " + elseData[x]['else-input-text'] + " "
                     }
                 }
                 string += " @endif"
