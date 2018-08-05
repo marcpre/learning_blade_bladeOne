@@ -1,6 +1,7 @@
 <h1><b>General</b></h1>
 
-The Model S11 SiaMaster from Innosilicon was previously under the top 3 miners on coindation.com. It is mining Blake2B algorithm with a maximum hashrate of 4.3Th/s for a power consumption of 1350W.
+The Model {{miningModel}} from {{company}} was previously under the top 3 miners on coindation.com. It is mining Blake2B algorithm with a maximum hashrate of 4.3Th/s for a power consumption of 1350W.
+
 @if (count($listOfAlgorithms) === 1)
     The model focuses on the following algorithms: {{listOfAlgorithms}}. 
 @elseif (count($listOfAlgorithms) === 2)    
@@ -10,7 +11,7 @@ The Model S11 SiaMaster from Innosilicon was previously under the top 3 miners o
 @endif
 
 <h1><b>Costs</b></h1>
-We assume an overall price per watt of 0.1. Hence we derive a const
+We assume an overall price per waconsttt of 0.1. Hence we derive a 
 
 
 ###################

@@ -55,7 +55,8 @@
                     body: body,
                     footer: footer
                 }).render().appendTo($container);
-                self.fillSelectField();
+                // TODO
+                // self.fillSelectField();
                 // self.selectItem()
             };
 
@@ -67,6 +68,8 @@
             };
 
             self.showDialog = function () {
+                self.fillSelectField();
+                
                 self
                     .openDialog()
                     .then(function (data) {
