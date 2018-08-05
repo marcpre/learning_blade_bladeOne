@@ -42,7 +42,7 @@
                 var $container = options.dialogsInBody ? $(document.body) : $editor;
 
                 var body = '<div class="form-group">' +
-                    'IF(<input type="text" name="if-input" placeholder="Condition"/>) <textarea name="if-textarea-input" placeholder="Insert your text"></textarea>' +
+                    'IF(<input id="if-input" type="text" name="if-input" placeholder="Condition"/>) <textarea id="if-textarea-input" name="if-textarea-input" placeholder="Insert your text"></textarea>' +
                     '<form action="" class="repeater form-horizontal well" enctype="multipart/form-data">' +
                     '<div data-repeater-list="elseGroup">' +
                     '<div data-repeater-item>' +
@@ -51,7 +51,7 @@
                     '<option value="ELSEIF" >ELSEIF</option>' +
                     '</select>' +
                     '(<input type="text" name="else-condition" placeholder="Condition" />)' +
-                    '<textarea name="else-input-text" placeholder="Insert..."></textarea>' +
+                    '<textarea name="else-input-text" placeholder="Insert..."/>' +
                     '<input data-repeater-delete type="button" value="Delete"/>' +
                     '</div>' +
                     '</div>' +
@@ -91,13 +91,11 @@
                     .fail(function () {
                         context.invoke('editor.restoreRange');
                     });
-
             };
 
             self.openDialog = function () {
                 return $.Deferred(function (deferred) {
                     var $ifElseBtn = self.$dialog.find('.ext-ifElse-btn');
-                    // var $ifElseInput = self.$dialog.find('#input-ifElse')[0];
 
                     context.invoke('editor.saveRange');
                     ui.onDialogShown(self.$dialog, function () {
@@ -108,11 +106,15 @@
                                 event.preventDefault();
 
                                 var repeaterVals = $('.repeater').repeaterVal();
+                                var $ifInput = self.$dialog.find('#if-input')[0];
+                                var $ifTextfield = self.$dialog.find('#if-textarea-input')[0];
 
                                 console.log("repeaterVals")
                                 console.log(repeaterVals)
 
                                 deferred.resolve({
+                                    ifCondition: $ifInput.value,
+                                    ifText: $ifTextfield.value,
                                     ifElse: repeaterVals
                                 });
                             });
@@ -156,9 +158,18 @@
             //text that is written to the editor
             this.insertToEditor = function (data) {
                 console.log("ifElse: ")
+                console.log(data)
+
+                const ifConditionData = data.ifCondition
+                const ifTextData = data.ifText
                 const elseData = data.ifElse.elseGroup
 
+                console.log("ifConditionData")
+                console.log(ifConditionData)
+                console.log(ifTextData)
+                
                 let string = ''
+                string += "@if( " + "\"" + ifTextData + "\"" + " ) " + ifConditionData + " "
                 for (var x in elseData) {
                     if (elseData[x]['select-input'] === 'ELSEIF') {
                         string += "@elseif( " + "\"" + elseData[x]['else-condition'] + "\"" + " ) " + elseData[x]['else-input-text'] + " "
@@ -168,6 +179,7 @@
                         string += "@else( " + "\"" + elseData[x]['else-condition'] + "\"" + " ) " + elseData[x]['else-input-text'] + " "
                     }
                 }
+                string += " @endif"
 
                 // var $elem = $('<ifElse>', {
                 //    words: data.ifElse
