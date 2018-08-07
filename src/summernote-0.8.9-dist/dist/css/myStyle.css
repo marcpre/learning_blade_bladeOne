@@ -5,4 +5,8 @@ synonym {
 insertData {
     background-color: lightgreen;
 }
+
+ifElse {
+    background-color: lightblue;
+}
     
