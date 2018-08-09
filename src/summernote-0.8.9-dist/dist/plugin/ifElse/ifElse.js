@@ -181,11 +181,12 @@
                 }
                 string += " @endif"
 
-                // var $elem = $('<ifElse>', {
-                //    words: data.ifElse
-                // });;
+                var $elem = $('<ifElse>');;
 
-                context.invoke('editor.insertText', string);
+                $elem.text(string)
+
+                // context.invoke('editor.insertText', string);
+                context.invoke('editor.insertNode', $elem[0]);
             };
         }
     });

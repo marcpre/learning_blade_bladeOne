@@ -146,11 +146,12 @@
             this.insertToEditor = function (data) {
                 console.log("insertData: " + data.insertData)
 
-                var $elem = $('<insertData>', {
-                    words: data.insertData
-                });;
+                var $elem = $('<insertData>');
+                
+                $elem.text(data.insertData)
 
-                context.invoke('editor.insertText', data.insertData);
+                // context.invoke('editor.insertText', data.insertData);
+                context.invoke('editor.insertNode', $elem[0]);
             };
         }
     });
