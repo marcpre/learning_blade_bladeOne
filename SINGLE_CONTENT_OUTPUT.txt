@@ -1,0 +1,200 @@
+<p>COMPANY1 is still one of the world premier ASIC manufacture
+ ######################### 
+<p>COMPANY1 is still one of the world premier ASIC manufacture 
+ ######################### 
+<p>COMPANY1 is still one of the world premier ASIC manufacture 
+ ######################### 
+<p>COMPANY1 is still one of the world premier ASIC manufactureworld most well known mining rig building companies
+ ######################### 
+<p>COMPANY1 is still one of the world premier ASIC manufactureworld most well known mining rig building companies
+ ######################### 
+<p>COMPANY1 is still one of the world most well known mining rig building companies 
+ ######################### 
+<p>COMPANY1 is still one of the world most well known mining rig building companies
+ ######################### 
+<p>COMPANY1 is still one of the  and it’s no secret that their mining rigs that many miners use their hardware. If you want to mine  the most well known coin - BTC -, you are better off buying  mining hardware from COMPANY1. The  mining rig builder&nbsp;brought to the marketthe MODEL1, their latest miner.<br></p>
+<p>The <ifelse> "CATEGORY1"  </ifelse> miner 
+Notice: Use of undefined constant miningModel - assumed 'miningModel' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.1067     944400   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.1067     944400   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.1085     944560   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.1114     976272   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+miningModel from 
+Notice: Use of undefined constant company - assumed 'company' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.1067     944400   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.1067     944400   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.1085     944560   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.1114     976272   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+company was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM1 algorithm with a  maxhashrate of HASHRATE1 for a power consumption of POWERCONSUMPTION1.
+<ifelse>
+ The model focuses on the following algorithms: 
+Notice: Use of undefined constant listOfAlgorithms - assumed 'listOfAlgorithms' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 6
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.1067     944400   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.1067     944400   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.1085     944560   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.1114     976272   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+listOfAlgorithms. 
+ </ifelse> You can mine with the MODEL1 the following crypto-coins: MistOfCryptocurrencies</p><p>
+
+</p><h1> Pros/Cons</h1>
+<ul><li>Insert Randomly here advantages/disadvantages</li></ul>
+
+
+<h1> Costs for Electricity<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts1&nbsp;. Hence the miner has&nbsp;MiningCosts&nbsp;until the miner gets profitable. (as per 2018-08-12).  'Payback Period' is defined for us as:: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the price of BTC.
+
+ ######################### 
+<p>COMPANY1 is still one of the  
+ ######################### 
+<p>COMPANY1 is still one of the  and it’s no secret that their hardware&nbsp;&nbsp; that many miners use their hardware. If you want to mine Bitcoin, you are better off buying computer hardware from COMPANY1. The  manufacturer&nbsp; is sellingthe MODEL1, their latest computer hardware.<br></p>
+<p>The <ifelse> "CATEGORY1"  </ifelse> miner 
+Notice: Use of undefined constant miningModel - assumed 'miningModel' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.2699     951696   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.2700     951696   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.2722     951856   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.2752     983568   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+miningModel from 
+Notice: Use of undefined constant company - assumed 'company' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.2699     951696   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.2700     951696   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.2722     951856   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.2752     983568   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+company was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM1 algorithm with a maximum hashrate of HASHRATE1 and a power consumption of POWERCONSUMPTION1.
+<ifelse>
+ The model focuses on the following algorithms: 
+Notice: Use of undefined constant listOfAlgorithms - assumed 'listOfAlgorithms' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 6
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.2699     951696   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.2700     951696   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.2722     951856   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.2752     983568   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+listOfAlgorithms. 
+ </ifelse> You can mine with the MODEL1 the  coins: MistOfCryptocurrencies</p><p>
+
+</p><h1>Advantages/Disadvantages</h1>
+<ul><li>Insert Randomly here advantages/disadvantages</li></ul>
+
+
+<h1> Costs for Operating the Rig<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts1&nbsp;. Hence the miner has&nbsp;MiningCosts&nbsp;until the miner gets profitable. (as per 2018-08-12).  'Payback Period' is defined for us as:: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the current price of BTC.
+
+ ######################### 
+<p>COMPANY1 is still one of the  and it’s no secret that their  rigspowers most of the Bitcoin network. If you want to mine Bitcoin, you are better off buying hardware from COMPANY1. The  manufacturer&nbsp;launched the MODEL1, their latest computer hardware.<br></p>
+<p>The <ifelse> "CATEGORY1"  </ifelse> model 
+Notice: Use of undefined constant miningModel - assumed 'miningModel' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.3537     955792   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.3537     955792   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.3557     955952   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.3583     987664   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+miningModel from 
+Notice: Use of undefined constant company - assumed 'company' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.3537     955792   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.3537     955792   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.3557     955952   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.3583     987664   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+company was previously under the top 3 miners on coindation.com. 
+It is mining ALGORITHM1 algorithm with a maximum hashrate of HASHRATE1 and a power consumption of POWERCONSUMPTION1.
+<ifelse>
+ The model focuses on the following algorithms: 
+Notice: Use of undefined constant listOfAlgorithms - assumed 'listOfAlgorithms' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 6
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.3537     955792   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.3537     955792   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.3557     955952   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.3583     987664   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+listOfAlgorithms. 
+ </ifelse> You can mine with the MODEL1 the  coins: MistOfCryptocurrencies</p><p>
+
+</p><h1> Like/dislike</h1>
+<ul><li>Insert Randomly here advantages/disadvantages</li></ul>
+
+
+<h1> Costs for Operating the Rig<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts1&nbsp;. Hence the miner has&nbsp;MiningCosts&nbsp;until the miner gets profitable. (as per 2018-08-12).  'Payback Period' is defined for us as:: Number of days to make your initial costs back.. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the price of BTC.
+
+ ######################### 
+<p>COMPANY1 is still one of the world most well known mining rig building companies
+ ######################### 
+<p>COMPANY1 is still one of the  and it’s no secret that their  computer hardwarepowers most of the Bitcoin network. If you want to mine  the most well known coin - BTC -, you are better off buying  mining rigs from COMPANY1. The  manufacturer&nbsp;launched the MODEL1, their latest computer hardware.<br></p>
+<p>The <ifelse> "CATEGORY1"  </ifelse> model 
+Notice: Use of undefined constant miningModel - assumed 'miningModel' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.5099     959888   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.5099     959888   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.5115     960048   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.5140     991760   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+miningModel from 
+Notice: Use of undefined constant company - assumed 'company' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 2
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.5099     959888   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.5099     959888   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.5115     960048   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.5140     991760   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+company was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM1 algorithm with a maximum hashrate of HASHRATE1 and a power consumption of POWERCONSUMPTION1.
+<ifelse>
+ The model focuses on the following algorithms: 
+Notice: Use of undefined constant listOfAlgorithms - assumed 'listOfAlgorithms' in C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13 on line 6
+
+Call Stack:
+    0.4149     358504   1. main() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:0
+    1.5099     959888   2. eftec\bladeone\BladeOne->run() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\02_singlePost_content.php:80
+    1.5099     959888   3. eftec\bladeone\BladeOne->runInternal() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:287
+    1.5115     960048   4. eftec\bladeone\BladeOne->evaluatePath() C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:345
+    1.5140     991760   5. include('C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\cache\singlePost _23fbc27e47728f2b66217a9e5fa817f5dcde5a13') C:\Users\marcus\Desktop\Coding Projects\learning_blade_bladeOne\vendor\eftec\bladeone\lib\BladeOne\BladeOne.php:1732
+
+listOfAlgorithms. 
+ </ifelse> You can mine with the MODEL1 the  crypto-coins: MistOfCryptocurrencies</p><p>
+
+</p><h1> Plus/Minuses</h1>
+<ul><li>Insert Randomly here advantages/disadvantages</li></ul>
+
+
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts1&nbsp;. Hence the miner has&nbsp;MiningCosts&nbsp;until the miner gets profitable. (as per 2018-08-12). Our definition of payback period is: Number of days to make your initial costs back.. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the  the price of BTC.
+
+ ######################### 
+<p>COMPANY1 is still one of the   
+ ######################### 
+<p>COMPANY1 is still one of the world premier ASIC manufacture 
+ ######################### 
+<p>COMPANY1 is still one of the  
+ ######################### 

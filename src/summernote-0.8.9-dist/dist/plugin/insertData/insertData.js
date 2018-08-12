@@ -29,6 +29,7 @@
 
             // add context menu button
             context.memo('button.insertData', function () {
+               
                 return ui.button({
                     contents: '<i class="fa fa-database">',
                     tooltip: 'Create InsertData',
@@ -68,6 +69,9 @@
             };
 
             self.showDialog = function () {
+                // show inserted fields as a list
+                self.allInsertDataFields();
+
                 self.fillSelectField();
                 
                 self
@@ -142,6 +146,17 @@
                 });
             }
 
+            this.allInsertDataFields = function () {
+                var data = []
+                // var _self = this;
+                var text = $('.note-editable').html()
+                data = text.match(/{{\s*\$\w+\s*}}/g)
+                data.push("null"); // add empty value to array
+                data = data.filter((v, i, a) => a.indexOf(v) === i); // only unique values
+                
+                $('.insertDataFields').append(data)
+            }
+            
             //text that is written to the editor
             this.insertToEditor = function (data) {
                 console.log("insertData: " + data.insertData)

@@ -20,7 +20,7 @@ foreach ($rows as $row) {
 }
 
 print_r($csv[0]);
-
+$output = "";
 foreach ($csv as $key => $value) {
     $output .= $blade->run("hello",$csv[$key]);
     $output .= "######################### \n";
@@ -28,5 +28,5 @@ foreach ($csv as $key => $value) {
     echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output);
 }
 
-file_put_contents("./CONTENT_OUTPUT.txt", $output);
+file_put_contents("./SINGLE_POST_CONTENT_OUTPUT.txt", $output);
 // echo $blade->run("hello",array("variable1"=>"value1"));

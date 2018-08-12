@@ -20,8 +20,7 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
     public static $prefixDirsPsr4 = array (
         'eftec\\' => 
         array (
-            0 => __DIR__ . '/..' . '/eftec',
-            1 => __DIR__ . '/..' . '/eftec/bladeone/lib',
+            0 => __DIR__ . '/..' . '/eftec/bladeone/lib',
         ),
         'Noodlehaus\\' => 
         array (
@@ -35,6 +34,13 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
             'DaveChild\\TextStatistics' => 
             array (
                 0 => __DIR__ . '/..' . '/davechild/textstatistics/src',
+            ),
+        ),
+        'C' => 
+        array (
+            'ChillDev\\Spintax' => 
+            array (
+                0 => __DIR__ . '/..' . '/chilldev/spintax',
             ),
         ),
     );
