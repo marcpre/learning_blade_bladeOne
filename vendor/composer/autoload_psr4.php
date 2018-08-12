@@ -6,6 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'eftec\\' => array($vendorDir . '/eftec/bladeone/lib'),
+    'eftec\\bladeone\\' => array($vendorDir . '/eftec/bladeone/lib'),
     'Noodlehaus\\' => array($vendorDir . '/hassankhan/config/src'),
 );

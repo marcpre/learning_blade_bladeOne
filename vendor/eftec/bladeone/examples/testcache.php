@@ -2,11 +2,11 @@
 /**
  * Copyright (c) 2016 Jorge Patricio Castro Castillo MIT License.
  */
-include "../lib/BladeOne/BladeOne.php";
+include "../lib/BladeOne.php";
 
-include "../lib/BladeOne/BladeOneCache.php";
+include "../lib/BladeOneCache.php";
 
-use eftec\bladeone;
+use eftec\bladeone\BladeOne;
 
 $views = __DIR__ . '/views';
 $compiledFolder = __DIR__ . '/compiled';

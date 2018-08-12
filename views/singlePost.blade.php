@@ -1,14 +1,14 @@
 <p><insertdata>{{$company}}</insertdata> is still one of the <synonym words="world most well known mining rig building companies| ">world premier ASIC manufacture</synonym><synonym words="world most well known mining rig building companies| "></synonym>| and it’s no secret that their <synonym words="mining rigs| rigs| computer hardware">hardware&nbsp;&nbsp;</synonym><synonym words="is used widely across the BTC network| that many miners use their hardware">powers most of the Bitcoin network</synonym>. If you want to mine <synonym words="BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -">Bitcoin</synonym>, you are better off buying <synonym words="computer hardware| mining rigs| mining hardware">hardware</synonym> from <insertdata>{{$company}}</insertdata>. The <synonym words="company| manufacturer| mining rig builder| cooperation">firm</synonym>&nbsp;<synonym words="brought to the market| is selling">launched </synonym>the <insertdata>{{$model}}</insertdata>, their <synonym words="latest computer hardware">latest miner</synonym><synonym words=""></synonym>.<br></p>
-<p>The <ifelse>@if( count( $category ) === 1 ) "<insertdata>{{ $category }}</insertdata>" @endif </ifelse> <synonym words="miner">model</synonym> <insertdata>{{miningModel}}</insertdata> from {{company}} was previously under the <synonym words="top| best| most profitable">top 3</synonym> miners on coindation.com. 
+<p>The <ifelse>@if( count( $category ) === 1 ) "<insertdata>{{ $category }}</insertdata>" @endif </ifelse> <synonym words="miner">model</synonym> <insertdata>{{$miningModel}}</insertdata> from {{$company}} was previously under the <synonym words="top| best| most profitable">top 3</synonym> miners on coindation.com. 
 It is mining <insertdata>{{$algorithm}}</insertdata> algorithm with a <synonym words=" | max">maximum </synonym>hashrate of <insertdata>{{ $hashRate }}</insertdata> <synonym words="and a power consumption of| consuming power as much as">for a power consumption of</synonym> <insertdata>{{ $powerConsumption }}</insertdata>.
 <ifelse>
 @if (count( $listOfAlgorithms ) === 1)
-    The model focuses on the following algorithms: <insertdata>{{listOfAlgorithms}}</insertdata>. 
+    The model focuses on the following algorithms: <insertdata>{{$listOfAlgorithms}}</insertdata>. 
 @elseif (count( $listOfAlgorithms ) === 2)    
     On the one hand the <insertdata>{{$model}}</insertdata> supports the algorithm <insertdata>{{ $listOfAlgorithms }}</insertdata> and on the other hand you can buy miner that support <insertdata>{{ $listOfAlgorithms }}</insertdata>. 
 @else
 <insertdata>{{$model}}</insertdata> only supports one single algorithm|  <insertdata>{{ $listOfAlgorithms }}</insertdata>
-@endif </ifelse> You can mine with the <insertdata>{{$model}}</insertdata> the <synonym words=" ">following </synonym><synonym words="crypto-coins| cryptocurrencies">coins</synonym>: <insertdata>{{ $listOfCryptocurrencies }}</insertdata></p><p>
+@endif </ifelse> You can mine with the <insertdata>{{$model}}</insertdata> the <synonym words=" ">following </synonym><synonym words="crypto-coins|cryptocurrencies">coins</synonym>: <insertdata>{{ $listOfCryptocurrencies }}</insertdata></p><p>
 
 </p><h1><synonym words=" Pros/Cons| Plus/Minuses| Like/dislike">Advantages/Disadvantages</synonym></h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>

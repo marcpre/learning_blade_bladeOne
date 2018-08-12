@@ -1,10 +1,11 @@
 <?php
 require "vendor/autoload.php";
+require "src/Spintax/Spintax.php";
 
 Use eftec\bladeone;
 use DaveChild\TextStatistics as TS;
 use Noodlehaus\Config;
-use ChillDev\Spintax\Parser;
+use Spintax;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
@@ -45,22 +46,25 @@ $result = $conn->query($sql);
  * Create FINAL RESULT array
  */
 $data = array();
+$i = 0;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         // array_push($data, $row);
+        $i++;
         array_push($data, array(
             // 'id' => $key, //artificial coin id 
-            'company' => 'COMPANY1',
-            'category' => 'CATEGORY1',
-            'algorithm' => 'ALGORITHM1',
-            'hashRate' => 'HASHRATE1',
-            'powerConsumption' => 'POWERCONSUMPTION1',
-            'model' => 'MODEL1',
-            'listOfAlgorithms' => 'ListOfAlgorithms1',
-            'listOfCryptocurrencies' => 'MistOfCryptocurrencies',
-            'miningCosts' => 'MiningCosts1',
-            'dailyProfitOfMiner' => 'MiningCosts',
+            'company' => 'COMPANY ' . $i,
+            'category' => 'CATEGORY ' . $i,
+            'algorithm' => 'ALGORITHM ' . $i,
+            'hashRate' => 'HASHRATE ' . $i,
+            'powerConsumption' => 'POWERCONSUMPTION ' . $i,
+            'model' => 'MODEL ' . $i,
+            'listOfAlgorithms' => 'lolo ' . $i,
+            'listOfCryptocurrencies' => 'MistOfCryptocurrencies ' . $i,
+            'miningCosts' => 'MiningCosts ' . $i,
+            'miningModel' => 'miningModel ' . $i,
+            'dailyProfitOfMiner' => 'MiningCosts ' . $i,
             'today' => date('Y-m-d'),
         ));
     }
@@ -73,24 +77,27 @@ echo "Fill template \n";
 /**
  * Fill template
  **/
-$output = '';
+$finalOutput = '';
 foreach ($data as $key => $value) {
     print_r($data[$key]);
-       
+    
+    $output = '';
+    
     $output = $blade->run("singlePost", $data[$key]);
     // create spintax
     $output = str_replace("</synonym>","}",$output);
     $output = str_replace("\">","|",$output);
     $output = str_replace("<synonym words=\"","{",$output);
 
-    // create spintax
+    // replace tags
     $output = str_replace("<insertdata>","",$output);
     $output = str_replace("</insertdata>","",$output);
+    $output = str_replace("<ifelse>","",$output);
+    $output = str_replace("</ifelse>","",$output);
  
-    $output = Parser::parse($output);
-    $finalOutput .= $output->generate();   
+    $spintax = new Spintax();
+    $finalOutput .= $spintax->process($output);   
 
-    
     $finalOutput .= "\n ######################### \n";
     echo $finalOutput;
     // echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output) . "\n";

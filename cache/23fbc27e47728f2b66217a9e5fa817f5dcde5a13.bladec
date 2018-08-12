@@ -8,7 +8,7 @@ It is mining <insertdata><?php echo static::e($algorithm); ?></insertdata> algor
  On the one hand the <insertdata><?php echo static::e($model); ?></insertdata> supports the algorithm <insertdata><?php echo static::e($listOfAlgorithms); ?></insertdata> and on the other hand you can buy miner that support <insertdata><?php echo static::e($listOfAlgorithms); ?></insertdata>. 
 <?php else: ?>
 <insertdata><?php echo static::e($model); ?></insertdata> only supports one single algorithm|  <insertdata><?php echo static::e($listOfAlgorithms); ?></insertdata>
-<?php endif; ?> </ifelse> You can mine with the <insertdata><?php echo static::e($model); ?></insertdata> the <synonym words=" ">following </synonym><synonym words="crypto-coins| cryptocurrencies">coins</synonym>: <insertdata><?php echo static::e($listOfCryptocurrencies); ?></insertdata></p><p>
+<?php endif; ?> </ifelse> You can mine with the <insertdata><?php echo static::e($model); ?></insertdata> the <synonym words=" ">following </synonym><synonym words="crypto-coins|cryptocurrencies">coins</synonym>: <insertdata><?php echo static::e($listOfCryptocurrencies); ?></insertdata></p><p>
 
 </p><h1><synonym words=" Pros/Cons| Plus/Minuses| Like/dislike">Advantages/Disadvantages</synonym></h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>

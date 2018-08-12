@@ -1,55 +1,5 @@
 [
     {
-        "name": "eftec/bladeone",
-        "version": "3.0",
-        "version_normalized": "3.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/EFTEC/BladeOne.git",
-            "reference": "e8af1f90d4016f771809dfba8cc7c6de51a24b3f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/e8af1f90d4016f771809dfba8cc7c6de51a24b3f",
-            "reference": "e8af1f90d4016f771809dfba8cc7c6de51a24b3f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.4"
-        },
-        "time": "2018-07-12T18:08:51+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "3-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "eftec\\": "lib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jorge Patricio Castro Castillo",
-                "email": "jcastro@eftec.cl"
-            }
-        ],
-        "description": "The standalone version Blade Template Engine from Laravel in a single php file",
-        "homepage": "https://github.com/EFTEC/BladeOne",
-        "keywords": [
-            "blade",
-            "php",
-            "template",
-            "view"
-        ]
-    },
-    {
         "name": "davechild/textstatistics",
         "version": "1.0.1",
         "version_normalized": "1.0.1.0",
@@ -163,38 +113,31 @@
         ]
     },
     {
-        "name": "chilldev/spintax",
-        "version": "0.0.1",
-        "version_normalized": "0.0.1.0",
-        "target-dir": "ChillDev/Spintax",
+        "name": "eftec/bladeone",
+        "version": "3.3",
+        "version_normalized": "3.3.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/chilloutdevelopment/ChillDevSpintax.git",
-            "reference": "901a93b249b25c28167ac692977e7601c399abdb"
+            "url": "https://github.com/EFTEC/BladeOne.git",
+            "reference": "76f5e68a0a1e06443b7f8c5e54673277c696336d"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/chilloutdevelopment/ChillDevSpintax/zipball/901a93b249b25c28167ac692977e7601c399abdb",
-            "reference": "901a93b249b25c28167ac692977e7601c399abdb",
+            "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/76f5e68a0a1e06443b7f8c5e54673277c696336d",
+            "reference": "76f5e68a0a1e06443b7f8c5e54673277c696336d",
             "shasum": ""
         },
-        "require": {
-            "php": ">=5.4"
-        },
-        "require-dev": {
-            "ext-xsl": "*",
-            "phpmd/phpmd": "1.5.0",
-            "phpunit/phpunit": "3.7.29",
-            "satooshi/php-coveralls": "0.6.1",
-            "sebastian/phpcpd": "2.0.0",
-            "squizlabs/php_codesniffer": "1.5.1"
-        },
-        "time": "2014-01-24T21:29:16+00:00",
+        "time": "2018-08-08T20:52:27+00:00",
         "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "3.3-dev"
+            }
+        },
         "installation-source": "dist",
         "autoload": {
-            "psr-0": {
-                "ChillDev\\Spintax": ""
+            "psr-4": {
+                "eftec\\bladeone\\": "lib/"
             }
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -203,25 +146,17 @@
         ],
         "authors": [
             {
-                "name": "Rafał Wrzeszcz",
-                "email": "rafal.wrzeszcz@wrzasq.pl",
-                "homepage": "http://wrzasq.pl/",
-                "role": "creator,manager,architect,developer"
-            },
-            {
-                "name": "Chillout Development",
-                "email": "biuro@chilldev.pl",
-                "homepage": "http://chilldev.pl/",
-                "role": "owner"
+                "name": "Jorge Patricio Castro Castillo",
+                "email": "jcastro@eftec.cl"
             }
         ],
-        "description": "Spintax {parsing|processing} library.",
-        "homepage": "http://chilloutdevelopment.github.com/ChillDevSpintax",
+        "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+        "homepage": "https://github.com/EFTEC/BladeOne",
         "keywords": [
-            "chilldev",
-            "content generator",
-            "seo",
-            "spintax"
+            "blade",
+            "php",
+            "template",
+            "view"
         ]
     }
 ]

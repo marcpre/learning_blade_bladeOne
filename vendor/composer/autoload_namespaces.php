@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'DaveChild\\TextStatistics' => array($vendorDir . '/davechild/textstatistics/src'),
-    'ChillDev\\Spintax' => array($vendorDir . '/chilldev/spintax'),
 );

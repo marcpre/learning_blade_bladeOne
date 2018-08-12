@@ -9,7 +9,7 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
     public static $prefixLengthsPsr4 = array (
         'e' => 
         array (
-            'eftec\\' => 6,
+            'eftec\\bladeone\\' => 15,
         ),
         'N' => 
         array (
@@ -18,7 +18,7 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
     );
 
     public static $prefixDirsPsr4 = array (
-        'eftec\\' => 
+        'eftec\\bladeone\\' => 
         array (
             0 => __DIR__ . '/..' . '/eftec/bladeone/lib',
         ),
@@ -34,13 +34,6 @@ class ComposerStaticInitb9a54d4249cb279a1d37c1277432aaec
             'DaveChild\\TextStatistics' => 
             array (
                 0 => __DIR__ . '/..' . '/davechild/textstatistics/src',
-            ),
-        ),
-        'C' => 
-        array (
-            'ChillDev\\Spintax' => 
-            array (
-                0 => __DIR__ . '/..' . '/chilldev/spintax',
             ),
         ),
     );

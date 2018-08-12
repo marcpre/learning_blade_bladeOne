@@ -4,19 +4,15 @@
   "type": "library",
   "keywords": ["blade","template","view","php"],
   "homepage": "https://github.com/EFTEC/BladeOne",
-  "minimum-stability": "beta",
   "license": "MIT",
   "authors": [
     {
       "name": "Jorge Patricio Castro Castillo",
       "email": "jcastro@eftec.cl"
     }],
-  "require": {
-    "php": ">=5.4"
-  },
   "extra": {
     "branch-alias": {
-      "dev-master": "3-dev"
+      "dev-master": "3.3-dev"
     }
   },
   "archive": {
@@ -24,7 +20,7 @@
   },
   "autoload": {
       "psr-4": {
-        "eftec\\": "lib/"
+        "eftec\\bladeone\\": "lib/"
       }
   }
 }
