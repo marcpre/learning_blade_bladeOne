@@ -78,6 +78,7 @@ echo "Fill template \n";
  * Fill template
  **/
 $finalOutput = '';
+$spintax = new Spintax();
 foreach ($data as $key => $value) {
     print_r($data[$key]);
     
@@ -95,7 +96,6 @@ foreach ($data as $key => $value) {
     $output = str_replace("<ifelse>","",$output);
     $output = str_replace("</ifelse>","",$output);
  
-    $spintax = new Spintax();
     $finalOutput .= $spintax->process($output);   
 
     $finalOutput .= "\n ######################### \n";
