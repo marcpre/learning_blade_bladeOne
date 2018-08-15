@@ -40,8 +40,6 @@ $posts = "SELECT  wp_posts.*
         GROUP BY wp_posts.ID 
         ORDER BY wp_posts.post_date";
 
-$metaQuery = "SELECT * FROM wp_postmeta WHERE post_id = %s and meta_key = '%s' LIMIT 1;";
-
 $result = $conn->query($posts);
 
 /**
@@ -60,7 +58,8 @@ if ($result->num_rows > 0) {
         $powerConsumption = $conn->query(createMetaQuery($row["ID"], 'watt_estimate'))->fetch_assoc()["meta_value"];
         $modelName = $row["post_title"];
         $category = $conn->query(createPostIDQuery($row["ID"]))->fetch_assoc()["name"];
-     
+        $coins = getCoinList($row["ID"], $conn);
+        
         $i++;
         array_push($data, array(
             'postId' => $key, //artificial coin id 
@@ -70,8 +69,8 @@ if ($result->num_rows > 0) {
             'hashRate' => $hashRate,
             'powerConsumption' => $powerConsumption,
             'model' => $modelName,
-            'listOfAlgorithms' => 'lolo ' . $i,
-            'listOfCryptocurrencies' => 'MistOfCryptocurrencies ' . $i,
+            'listOfAlgorithms' => $algorithm,
+            'listOfCryptocurrencies' => $coins,
             'miningCosts' => 'MiningCosts ' . $i,
             'miningModel' => 'miningModel ' . $i,
             'dailyProfitOfMiner' => 'MiningCosts ' . $i,
@@ -137,5 +136,20 @@ function createPostIDQuery ($postID) {
     JOIN `wp_term_relationships` ttr ON(ttr.`term_taxonomy_id` = tt.`term_taxonomy_id`)
     WHERE tt.`taxonomy` = 'category'
     AND ttr.`object_id` = " . $postID;
+    
     return $str;
+}
+
+function getCoinList ($postID, $conn) {
+    $coins = $conn->query(createMetaQuery($postID, 'related_coins'))->fetch_assoc()["meta_value"];
+    
+    $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $coins . ")";
+    
+    $res = $conn->query($str);
+    $dat = "";
+    while($ro = $res->fetch_assoc()) {
+        $dat .= $ro["post_title"] . ", ";
+    }
+    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
+    return $dat;
 }
