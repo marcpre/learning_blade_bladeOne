@@ -18,7 +18,7 @@ class Spintax
         return $parts[array_rand($parts)];
     }
     */
-    
+    /*
     public function process($text) {
         return preg_replace_callback('/{([^}]*)}/', 'replace', $text);
     }
@@ -28,4 +28,13 @@ class Spintax
         shuffle($parts);
         return $parts[0];
     }
+    */
+    public function process($text) {
+        return preg_replace_callback('/{([^}]*)}/', function ($m) {
+            $parts = explode('|', $m[1]);
+            shuffle($parts);
+            return $parts[0];
+        }, $text);
+    }
+      
 }
