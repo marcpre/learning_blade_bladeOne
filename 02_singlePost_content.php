@@ -54,23 +54,22 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         // array_push($data, $row);
         
-        $manufacturer = $conn->query(createMetaQuery($row->post_id, 'manufacturer'));
-        $algorithm = $conn->query(createMetaQuery($row->post_id, 'algorithm'));
-        $hashRate = $conn->query(createMetaQuery($row->post_id, 'hash_rate'));
-        $powerConsumption = $conn->query(createMetaQuery($row->post_id, 'watt_estimate'));
-        $modelName = $row->post_title;
-        $category = $conn->query(createPostIDQuery($row->post_id));
-
-        
+        $manufacturer = $conn->query(createMetaQuery($row["ID"], 'manufacturer'))->fetch_assoc()["meta_value"];
+        $algorithm = $conn->query(createMetaQuery($row["ID"], 'algorithm'))->fetch_assoc()["meta_value"];
+        $hashRate = $conn->query(createMetaQuery($row["ID"], 'hash_rate'))->fetch_assoc()["meta_value"];
+        $powerConsumption = $conn->query(createMetaQuery($row["ID"], 'watt_estimate'))->fetch_assoc()["meta_value"];
+        $modelName = $row["post_title"];
+        $category = $conn->query(createPostIDQuery($row["ID"]))->fetch_assoc()["name"];
+     
         $i++;
         array_push($data, array(
             'postId' => $key, //artificial coin id 
-            'company' => 'COMPANY ' . $i,
-            'category' => 'CATEGORY ' . $i,
-            'algorithm' => 'ALGORITHM ' . $i,
-            'hashRate' => 'HASHRATE ' . $i,
-            'powerConsumption' => 'POWERCONSUMPTION ' . $i,
-            'model' => 'MODEL ' . $i,
+            'company' => $manufacturer,
+            'category' => $category,
+            'algorithm' => $algorithm,
+            'hashRate' => $hashRate,
+            'powerConsumption' => $powerConsumption,
+            'model' => $modelName,
             'listOfAlgorithms' => 'lolo ' . $i,
             'listOfCryptocurrencies' => 'MistOfCryptocurrencies ' . $i,
             'miningCosts' => 'MiningCosts ' . $i,
@@ -128,7 +127,6 @@ $conn->close();
 
 function createMetaQuery ($postID, $metaValue) {
     $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
-    echo $str;
     return $str;
 }
 
@@ -138,6 +136,6 @@ function createPostIDQuery ($postID) {
     JOIN `wp_term_taxonomy` tt ON(t.`term_id` = tt.`term_id`)
     JOIN `wp_term_relationships` ttr ON(ttr.`term_taxonomy_id` = tt.`term_taxonomy_id`)
     WHERE tt.`taxonomy` = 'category'
-    AND ttr.`object_id` = " . $postid;
+    AND ttr.`object_id` = " . $postID;
     return $str;
 }
