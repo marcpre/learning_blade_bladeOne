@@ -1,224 +1,256 @@
-<p>COMPANY 1 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 1. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 1, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 1   {miner|model} miningModel 1 from COMPANY 1 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 1 algorithm with a { | max|maximum }hashrate of HASHRATE 1 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 1.
+<p></p><p>COMPANY 1 is still one of the world premier ASIC manufacture  and it’s no secret that their hardware is used widely across the BTC network. If you want to mine  the most well known coin - BTC -, you are better off buying  mining rigs from COMPANY 1. The company  launched the MODEL 1, their latest computer hardware.<br></p>
+<p>The CATEGORY 1  miner miningModel 1 from COMPANY 1 was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM 1 algorithm with a maximum hashrate of HASHRATE 1  consuming power as much as POWERCONSUMPTION 1.
 
  The model focuses on the following algorithms: lolo 1. 
-  You can mine with the MODEL 1 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 1</p><p>
+  You can mine with the MODEL 1 the following coins: MistOfCryptocurrencies 1</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 1&nbsp;. Hence the miner has&nbsp;MiningCosts 1&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 1 . Hence the miner has MiningCosts 1 until the miner gets profitable. (as per August, 2018).  The definition of payback period is: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 1:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 1 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 2 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 2. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 2, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 2   {miner|model} miningModel 2 from COMPANY 2 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 2 algorithm with a { | max|maximum }hashrate of HASHRATE 2 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 2.
+<p></p><p>COMPANY 2 is still one of the world premier ASIC manufacture  and it’s no secret that their hardware powers most of the Bitcoin network. If you want to mine BTC, you are better off buying  mining hardware from COMPANY 2. The company  is sellingthe MODEL 2, their latest computer hardware.<br></p>
+<p>The CATEGORY 2  model miningModel 2 from COMPANY 2 was previously under the top miners on coindation.com. 
+It is mining ALGORITHM 2 algorithm with a  maxhashrate of HASHRATE 2  consuming power as much as POWERCONSUMPTION 2.
 
  The model focuses on the following algorithms: lolo 2. 
-  You can mine with the MODEL 2 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 2</p><p>
+  You can mine with the MODEL 2 the  coins: MistOfCryptocurrencies 2</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Pros/Cons</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 2&nbsp;. Hence the miner has&nbsp;MiningCosts 2&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 2 . Hence the miner has MiningCosts 2 until the miner gets profitable. (as per August, 2018). Our definition of payback period is: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 2:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 2 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 3 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 3. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 3, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 3   {miner|model} miningModel 3 from COMPANY 3 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 3 algorithm with a { | max|maximum }hashrate of HASHRATE 3 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 3.
+<p></p><p>COMPANY 3 is still one of the world most well known mining rig building companiesworld most well known mining rig building companies and it’s no secret that their mining rigs that many miners use their hardware. If you want to mine BTC, you are better off buying computer hardware from COMPANY 3. The  mining rig builder  launched the MODEL 3, their latest computer hardware.<br></p>
+<p>The CATEGORY 3  miner miningModel 3 from COMPANY 3 was previously under the  most profitable miners on coindation.com. 
+It is mining ALGORITHM 3 algorithm with a  maxhashrate of HASHRATE 3 for a power consumption of POWERCONSUMPTION 3.
 
  The model focuses on the following algorithms: lolo 3. 
-  You can mine with the MODEL 3 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 3</p><p>
+  You can mine with the MODEL 3 the following cryptocurrencies: MistOfCryptocurrencies 3</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Pros/Cons</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 3&nbsp;. Hence the miner has&nbsp;MiningCosts 3&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1>Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 3 . Hence the miner has MiningCosts 3 until the miner gets profitable. (as per August, 2018). We define 'payback period' as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 3:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 3 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 4 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 4. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 4, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 4   {miner|model} miningModel 4 from COMPANY 4 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 4 algorithm with a { | max|maximum }hashrate of HASHRATE 4 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 4.
+<p></p><p>COMPANY 4 is still one of the world premier ASIC manufacture and it’s no secret that their mining rigsis used widely across the BTC network. If you want to mine Bitcoin, you are better off buying  mining rigs from COMPANY 4. The  cooperation brought to the marketthe MODEL 4, their latest miner.<br></p>
+<p>The CATEGORY 4  miner miningModel 4 from COMPANY 4 was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM 4 algorithm with a  hashrate of HASHRATE 4 and a power consumption of POWERCONSUMPTION 4.
 
  The model focuses on the following algorithms: lolo 4. 
-  You can mine with the MODEL 4 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 4</p><p>
+  You can mine with the MODEL 4 the following cryptocurrencies: MistOfCryptocurrencies 4</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1>Advantages/Disadvantages</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 4&nbsp;. Hence the miner has&nbsp;MiningCosts 4&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 4 . Hence the miner has MiningCosts 4 until the miner gets profitable. (as per August, 2018). We define 'payback period' as: Number of days to make your initial costs back. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the price of BTC.<p></p>
+
+<h2>Comparison</h2><p>Find below our comparison table of similar models from COMPANY 4:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 4 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 5 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 5. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 5, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 5   {miner|model} miningModel 5 from COMPANY 5 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 5 algorithm with a { | max|maximum }hashrate of HASHRATE 5 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 5.
+<p></p><p>COMPANY 5 is still one of the  world most well known mining rig building companies and it’s no secret that their mining rigspowers most of the Bitcoin network. If you want to mine BTC, you are better off buying  mining rigs from COMPANY 5. The  mining rig builder  launched the MODEL 5, their latest miner.<br></p>
+<p>The CATEGORY 5  model miningModel 5 from COMPANY 5 was previously under the  most profitable miners on coindation.com. 
+It is mining ALGORITHM 5 algorithm with a  hashrate of HASHRATE 5  consuming power as much as POWERCONSUMPTION 5.
 
  The model focuses on the following algorithms: lolo 5. 
-  You can mine with the MODEL 5 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 5</p><p>
+  You can mine with the MODEL 5 the  coins: MistOfCryptocurrencies 5</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 5&nbsp;. Hence the miner has&nbsp;MiningCosts 5&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Operating Expenses<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 5 . Hence the miner has MiningCosts 5 until the miner gets profitable. (as per August, 2018).  The definition of payback period is: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be unpredictable we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 5:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 5 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 6 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 6. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 6, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 6   {miner|model} miningModel 6 from COMPANY 6 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 6 algorithm with a { | max|maximum }hashrate of HASHRATE 6 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 6.
+<p></p><p>COMPANY 6 is still one of the world premier ASIC manufacture  and it’s no secret that their  rigs that many miners use their hardware. If you want to mine BTC, you are better off buying  mining rigs from COMPANY 6. The  cooperation  launched the MODEL 6, their latest miner.<br></p>
+<p>The CATEGORY 6  miner miningModel 6 from COMPANY 6 was previously under the top miners on coindation.com. 
+It is mining ALGORITHM 6 algorithm with a  hashrate of HASHRATE 6 for a power consumption of POWERCONSUMPTION 6.
 
  The model focuses on the following algorithms: lolo 6. 
-  You can mine with the MODEL 6 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 6</p><p>
+  You can mine with the MODEL 6 the  cryptocurrencies: MistOfCryptocurrencies 6</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1>Advantages/Disadvantages</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 6&nbsp;. Hence the miner has&nbsp;MiningCosts 6&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1>Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 6 . Hence the miner has MiningCosts 6 until the miner gets profitable. (as per August, 2018).  The definition of payback period is: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 6:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 6 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 7 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 7. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 7, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 7   {miner|model} miningModel 7 from COMPANY 7 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 7 algorithm with a { | max|maximum }hashrate of HASHRATE 7 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 7.
+<p></p><p>COMPANY 7 is still one of the    and it’s no secret that their  computer hardwarepowers most of the Bitcoin network. If you want to mine Bitcoin, you are better off buying  mining rigs from COMPANY 7. The firm  is sellingthe MODEL 7, their latest computer hardware.<br></p>
+<p>The CATEGORY 7  miner miningModel 7 from COMPANY 7 was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM 7 algorithm with a  maxhashrate of HASHRATE 7  consuming power as much as POWERCONSUMPTION 7.
 
  The model focuses on the following algorithms: lolo 7. 
-  You can mine with the MODEL 7 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 7</p><p>
+  You can mine with the MODEL 7 the  crypto-coins: MistOfCryptocurrencies 7</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 7&nbsp;. Hence the miner has&nbsp;MiningCosts 7&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Costs for Electricity<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 7 . Hence the miner has MiningCosts 7 until the miner gets profitable. (as per August, 2018).  'Payback Period' is defined for us as: Number of days to make your initial costs back. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 7:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 7 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 8 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 8. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 8, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 8   {miner|model} miningModel 8 from COMPANY 8 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 8 algorithm with a { | max|maximum }hashrate of HASHRATE 8 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 8.
+<p></p><p>COMPANY 8 is still one of the world most well known mining rig building companies and it’s no secret that their  rigspowers most of the Bitcoin network. If you want to mine  the Bitcoin cryptocurrency, you are better off buying  mining rigs from COMPANY 8. The  mining rig builder  launched the MODEL 8, their latest computer hardware.<br></p>
+<p>The CATEGORY 8  model miningModel 8 from COMPANY 8 was previously under the top 3 miners on coindation.com. 
+It is mining ALGORITHM 8 algorithm with a maximum hashrate of HASHRATE 8 and a power consumption of POWERCONSUMPTION 8.
 
  The model focuses on the following algorithms: lolo 8. 
-  You can mine with the MODEL 8 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 8</p><p>
+  You can mine with the MODEL 8 the  crypto-coins: MistOfCryptocurrencies 8</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1>Advantages/Disadvantages</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 8&nbsp;. Hence the miner has&nbsp;MiningCosts 8&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Operating Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 8 . Hence the miner has MiningCosts 8 until the miner gets profitable. (as per August, 2018).  'Payback Period' is defined for us as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 8:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 8 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 9 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 9. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 9, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 9   {miner|model} miningModel 9 from COMPANY 9 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 9 algorithm with a { | max|maximum }hashrate of HASHRATE 9 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 9.
+<p></p><p>COMPANY 9 is still one of the  world most well known mining rig building companies and it’s no secret that their  rigspowers most of the Bitcoin network. If you want to mine  the most well known coin - BTC -, you are better off buying hardware from COMPANY 9. The firm brought to the marketthe MODEL 9, their latest computer hardware.<br></p>
+<p>The CATEGORY 9  model miningModel 9 from COMPANY 9 was previously under the top miners on coindation.com. 
+It is mining ALGORITHM 9 algorithm with a  hashrate of HASHRATE 9 for a power consumption of POWERCONSUMPTION 9.
 
  The model focuses on the following algorithms: lolo 9. 
-  You can mine with the MODEL 9 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 9</p><p>
+  You can mine with the MODEL 9 the  cryptocurrencies: MistOfCryptocurrencies 9</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 9&nbsp;. Hence the miner has&nbsp;MiningCosts 9&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Costs for Electricity<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 9 . Hence the miner has MiningCosts 9 until the miner gets profitable. (as per August, 2018). Our definition of payback period is: Number of days to make your initial costs back. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the price of BTC.<p></p>
+
+<h2>Comparison</h2><p>Find below our comparison table of similar models from COMPANY 9:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 9 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 10 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 10. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 10, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 10   {miner|model} miningModel 10 from COMPANY 10 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 10 algorithm with a { | max|maximum }hashrate of HASHRATE 10 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 10.
+<p></p><p>COMPANY 10 is still one of the    and it’s no secret that their hardware powers most of the Bitcoin network. If you want to mine BTC, you are better off buying  mining hardware from COMPANY 10. The  manufacturer  is sellingthe MODEL 10, their latest computer hardware.<br></p>
+<p>The CATEGORY 10  miner miningModel 10 from COMPANY 10 was previously under the top 3 miners on coindation.com. 
+It is mining ALGORITHM 10 algorithm with a  hashrate of HASHRATE 10  consuming power as much as POWERCONSUMPTION 10.
 
  The model focuses on the following algorithms: lolo 10. 
-  You can mine with the MODEL 10 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 10</p><p>
+  You can mine with the MODEL 10 the following crypto-coins: MistOfCryptocurrencies 10</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 10&nbsp;. Hence the miner has&nbsp;MiningCosts 10&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Costs for Operating the Rig<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 10 . Hence the miner has MiningCosts 10 until the miner gets profitable. (as per August, 2018).  The definition of payback period is: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 10:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 10 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 11 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 11. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 11, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 11   {miner|model} miningModel 11 from COMPANY 11 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 11 algorithm with a { | max|maximum }hashrate of HASHRATE 11 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 11.
+<p></p><p>COMPANY 11 is still one of the world most well known mining rig building companiesworld most well known mining rig building companies and it’s no secret that their  computer hardwareis used widely across the BTC network. If you want to mine BTC, you are better off buying computer hardware from COMPANY 11. The  cooperation  launched the MODEL 11, their latest miner.<br></p>
+<p>The CATEGORY 11  miner miningModel 11 from COMPANY 11 was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM 11 algorithm with a maximum hashrate of HASHRATE 11 and a power consumption of POWERCONSUMPTION 11.
 
  The model focuses on the following algorithms: lolo 11. 
-  You can mine with the MODEL 11 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 11</p><p>
+  You can mine with the MODEL 11 the  cryptocurrencies: MistOfCryptocurrencies 11</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1>Advantages/Disadvantages</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 11&nbsp;. Hence the miner has&nbsp;MiningCosts 11&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 11 . Hence the miner has MiningCosts 11 until the miner gets profitable. (as per August, 2018).  'Payback Period' is defined for us as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 11:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 11 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 12 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 12. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 12, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 12   {miner|model} miningModel 12 from COMPANY 12 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 12 algorithm with a { | max|maximum }hashrate of HASHRATE 12 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 12.
+<p></p><p>COMPANY 12 is still one of the world premier ASIC manufacture and it’s no secret that their  rigsis used widely across the BTC network. If you want to mine  the Bitcoin cryptocurrency, you are better off buying  mining rigs from COMPANY 12. The firm  launched the MODEL 12, their latest computer hardware.<br></p>
+<p>The CATEGORY 12  miner miningModel 12 from COMPANY 12 was previously under the top 3 miners on coindation.com. 
+It is mining ALGORITHM 12 algorithm with a  maxhashrate of HASHRATE 12  consuming power as much as POWERCONSUMPTION 12.
 
  The model focuses on the following algorithms: lolo 12. 
-  You can mine with the MODEL 12 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 12</p><p>
+  You can mine with the MODEL 12 the following coins: MistOfCryptocurrencies 12</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Pros/Cons</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 12&nbsp;. Hence the miner has&nbsp;MiningCosts 12&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 12 . Hence the miner has MiningCosts 12 until the miner gets profitable. (as per August, 2018). We define 'payback period' as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 12:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 12 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 13 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 13. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 13, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 13   {miner|model} miningModel 13 from COMPANY 13 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 13 algorithm with a { | max|maximum }hashrate of HASHRATE 13 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 13.
+<p></p><p>COMPANY 13 is still one of the  world most well known mining rig building companies and it’s no secret that their  rigspowers most of the Bitcoin network. If you want to mine BTC, you are better off buying computer hardware from COMPANY 13. The company  is sellingthe MODEL 13, their latest computer hardware.<br></p>
+<p>The CATEGORY 13  miner miningModel 13 from COMPANY 13 was previously under the top miners on coindation.com. 
+It is mining ALGORITHM 13 algorithm with a  hashrate of HASHRATE 13  consuming power as much as POWERCONSUMPTION 13.
 
  The model focuses on the following algorithms: lolo 13. 
-  You can mine with the MODEL 13 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 13</p><p>
+  You can mine with the MODEL 13 the following coins: MistOfCryptocurrencies 13</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1>Advantages/Disadvantages</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 13&nbsp;. Hence the miner has&nbsp;MiningCosts 13&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Operating Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 13 . Hence the miner has MiningCosts 13 until the miner gets profitable. (as per August, 2018). We define 'payback period' as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison</h2><p>Find below our comparison table of similar models from COMPANY 13:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 13 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 14 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 14. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 14, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 14   {miner|model} miningModel 14 from COMPANY 14 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 14 algorithm with a { | max|maximum }hashrate of HASHRATE 14 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 14.
+<p></p><p>COMPANY 14 is still one of the   and it’s no secret that their hardware  that many miners use their hardware. If you want to mine BTC, you are better off buying computer hardware from COMPANY 14. The company  launched the MODEL 14, their latest miner.<br></p>
+<p>The CATEGORY 14  model miningModel 14 from COMPANY 14 was previously under the  best miners on coindation.com. 
+It is mining ALGORITHM 14 algorithm with a maximum hashrate of HASHRATE 14 and a power consumption of POWERCONSUMPTION 14.
 
  The model focuses on the following algorithms: lolo 14. 
-  You can mine with the MODEL 14 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 14</p><p>
+  You can mine with the MODEL 14 the following cryptocurrencies: MistOfCryptocurrencies 14</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Plus/Minuses</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 14&nbsp;. Hence the miner has&nbsp;MiningCosts 14&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1>Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 14 . Hence the miner has MiningCosts 14 until the miner gets profitable. (as per August, 2018). Our definition of payback period is: Number of days to make your initial costs back. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison</h2><p>Find below our comparison table of similar models from COMPANY 14:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 14 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 15 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 15. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 15, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 15   {miner|model} miningModel 15 from COMPANY 15 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 15 algorithm with a { | max|maximum }hashrate of HASHRATE 15 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 15.
+<p></p><p>COMPANY 15 is still one of the   and it’s no secret that their  computer hardwareis used widely across the BTC network. If you want to mine BTC, you are better off buying hardware from COMPANY 15. The  cooperation  launched the MODEL 15, their latest miner.<br></p>
+<p>The CATEGORY 15  model miningModel 15 from COMPANY 15 was previously under the top miners on coindation.com. 
+It is mining ALGORITHM 15 algorithm with a  hashrate of HASHRATE 15  consuming power as much as POWERCONSUMPTION 15.
 
  The model focuses on the following algorithms: lolo 15. 
-  You can mine with the MODEL 15 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 15</p><p>
+  You can mine with the MODEL 15 the  cryptocurrencies: MistOfCryptocurrencies 15</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Like/dislike</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 15&nbsp;. Hence the miner has&nbsp;MiningCosts 15&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 15 . Hence the miner has MiningCosts 15 until the miner gets profitable. (as per August, 2018). We define 'payback period' as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be quite volatile we can only use as current starting point the  BTC price.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 15:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 15 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 
-<p>COMPANY 16 is still one of the {world most well known mining rig building companies| |world premier ASIC manufacture}{world most well known mining rig building companies| |}| and it’s no secret that their {mining rigs| rigs| computer hardware|hardware&nbsp;&nbsp;}{is used widely across the BTC network| that many miners use their hardware|powers most of the Bitcoin network}. If you want to mine {BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -|Bitcoin}, you are better off buying {computer hardware| mining rigs| mining hardware|hardware} from COMPANY 16. The {company| manufacturer| mining rig builder| cooperation|firm}&nbsp;{brought to the market| is selling|launched }the MODEL 16, their {latest computer hardware|latest miner}{|}.<br></p>
-<p>The  CATEGORY 16   {miner|model} miningModel 16 from COMPANY 16 was previously under the {top| best| most profitable|top 3} miners on coindation.com. 
-It is mining ALGORITHM 16 algorithm with a { | max|maximum }hashrate of HASHRATE 16 {and a power consumption of| consuming power as much as|for a power consumption of} POWERCONSUMPTION 16.
+<p></p><p>COMPANY 16 is still one of the world most well known mining rig building companies and it’s no secret that their hardware  that many miners use their hardware. If you want to mine  the most well known coin - BTC -, you are better off buying  mining hardware from COMPANY 16. The firm  launched the MODEL 16, their latest miner.<br></p>
+<p>The CATEGORY 16  miner miningModel 16 from COMPANY 16 was previously under the top 3 miners on coindation.com. 
+It is mining ALGORITHM 16 algorithm with a  hashrate of HASHRATE 16 and a power consumption of POWERCONSUMPTION 16.
 
  The model focuses on the following algorithms: lolo 16. 
-  You can mine with the MODEL 16 the { |following }{crypto-coins|cryptocurrencies|coins}: MistOfCryptocurrencies 16</p><p>
+  You can mine with the MODEL 16 the  crypto-coins: MistOfCryptocurrencies 16</p><p>
 
-</p><h1>{ Pros/Cons| Plus/Minuses| Like/dislike|Advantages/Disadvantages}</h1>
+</p><h1> Pros/Cons</h1>
 <ul><li>Insert Randomly here advantages/disadvantages</li></ul>
 
 
-<h1>{Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig|Costs}<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of&nbsp;MiningCosts 16&nbsp;. Hence the miner has&nbsp;MiningCosts 16&nbsp;until the miner gets profitable. (as per 2018-08-15). {We define 'payback period' as:| 'Payback Period' is defined for us as:| The definition of payback period is:|Our definition of payback period is}: {Number of days to make your initial costs back.|The time that it takes the cryptominer to make its money back in days}. As crypto markets have been proven in the past to be {quite volatile| fluctuating|unpredictable} we can only use as current starting point the {price of BTC.| the price of BTC.|current price of BTC.}
+<h1> Electricity Costs<b></b></h1>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost base line of MiningCosts 16 . Hence the miner has MiningCosts 16 until the miner gets profitable. (as per August, 2018).  'Payback Period' is defined for us as: The time that it takes the cryptominer to make its money back in days. As crypto markets have been proven in the past to be  fluctuating we can only use as current starting point the current price of BTC.<p></p>
+
+<h2>Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models</h2><p>Find below our comparison table of similar models from COMPANY 16:</p><table class="table table-bordered|<tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently numberOfMiningModels 16 on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
 
  ######################### 

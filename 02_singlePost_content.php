@@ -32,15 +32,17 @@ if ($conn->connect_error) {
 } 
 echo "Connected successfully \n";
 
-$sql = "SELECT  wp_posts.* 
+$posts = "SELECT  wp_posts.* 
         FROM wp_posts  
         LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND ( 
-             wp_term_relationships.term_taxonomy_id IN (43)
+             wp_term_relationships.term_taxonomy_id = 43 OR wp_term_relationships.term_taxonomy_id = 55 
         ) AND wp_posts.post_type = 'computer-hardware' AND (wp_posts.post_status = 'publish') 
         GROUP BY wp_posts.ID 
         ORDER BY wp_posts.post_date";
 
-$result = $conn->query($sql);
+$metaQuery = "SELECT * FROM wp_postmeta WHERE post_id = %s and meta_key = '%s' LIMIT 1;";
+
+$result = $conn->query($posts);
 
 /**
  * Create FINAL RESULT array
@@ -51,9 +53,18 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         // array_push($data, $row);
+        
+        $manufacturer = $conn->query(createMetaQuery($row->post_id, 'manufacturer'));
+        $algorithm = $conn->query(createMetaQuery($row->post_id, 'algorithm'));
+        $hashRate = $conn->query(createMetaQuery($row->post_id, 'hash_rate'));
+        $powerConsumption = $conn->query(createMetaQuery($row->post_id, 'watt_estimate'));
+        $modelName = $row->post_title;
+        $category = $conn->query(createPostIDQuery($row->post_id));
+
+        
         $i++;
         array_push($data, array(
-            // 'id' => $key, //artificial coin id 
+            'postId' => $key, //artificial coin id 
             'company' => 'COMPANY ' . $i,
             'category' => 'CATEGORY ' . $i,
             'algorithm' => 'ALGORITHM ' . $i,
@@ -65,7 +76,9 @@ if ($result->num_rows > 0) {
             'miningCosts' => 'MiningCosts ' . $i,
             'miningModel' => 'miningModel ' . $i,
             'dailyProfitOfMiner' => 'MiningCosts ' . $i,
-            'today' => date('Y-m-d'),
+            'numberOfMiningModels'  => 'numberOfMiningModels ' . $i,
+            'dayToday' => date('F jS, Y', strtotime("now")),
+            'monthToday' => date('F, Y', strtotime("now")),
         ));
     }
 } else {
@@ -95,9 +108,13 @@ foreach ($data as $key => $value) {
     $output = str_replace("</insertdata>","",$output);
     $output = str_replace("<ifelse>","",$output);
     $output = str_replace("</ifelse>","",$output);
- 
+     
+    // &nbsp;
+    $output = str_replace("&nbsp;"," ",$output);
+    $output = str_replace("/\s+/"," ",$output); // replace 1 or more spaces
+    
     $finalOutput .= $spintax->process($output);   
-
+    
     $finalOutput .= "\n ######################### \n";
     echo $finalOutput;
     // echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output) . "\n";
@@ -107,3 +124,20 @@ file_put_contents("./SINGLE_CONTENT_OUTPUT.txt", $finalOutput);
 
 // close mysql connection
 $conn->close();
+
+
+function createMetaQuery ($postID, $metaValue) {
+    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
+    echo $str;
+    return $str;
+}
+
+function createPostIDQuery ($postID) {
+    $str = "SELECT t.* 
+    FROM `wp_terms` t
+    JOIN `wp_term_taxonomy` tt ON(t.`term_id` = tt.`term_id`)
+    JOIN `wp_term_relationships` ttr ON(ttr.`term_taxonomy_id` = tt.`term_taxonomy_id`)
+    WHERE tt.`taxonomy` = 'category'
+    AND ttr.`object_id` = " . $postid;
+    return $str;
+}
