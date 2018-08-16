@@ -5,8 +5,8 @@
         "email": "admin@admin.com"
     }],
     "require": {
-        "eftec/bladeone": "^3.0",
         "davechild/textstatistics": "1.*",
-        "hassankhan/config": "^1.0"
+        "hassankhan/config": "^1.0",
+        "eftec/bladeone": "^3.3"
         }
 }

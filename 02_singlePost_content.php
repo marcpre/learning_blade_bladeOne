@@ -2,7 +2,7 @@
 require "vendor/autoload.php";
 require "src/Spintax/Spintax.php";
 
-Use eftec\bladeone;
+use eftec\bladeone;
 use DaveChild\TextStatistics as TS;
 use Noodlehaus\Config;
 use Spintax;
@@ -59,10 +59,13 @@ if ($result->num_rows > 0) {
         $modelName = $row["post_title"];
         $category = $conn->query(createPostIDQuery($row["ID"]))->fetch_assoc()["name"];
         $coins = getCoinList($row["ID"], $conn);
-        
+        $averageMiningCosts30 = getMiningCosts($row["ID"], $conn);
+        $averageMiningProfit30 = getMiningProfitability($row["ID"], $conn);
+        $miningModelsByCompany = getminingModelsByCompany($row["ID"], $manufacturer, $conn);
+
         $i++;
         array_push($data, array(
-            'postId' => $key, //artificial coin id 
+            'postId' => $row["ID"], 
             'company' => $manufacturer,
             'category' => $category,
             'algorithm' => $algorithm,
@@ -71,9 +74,9 @@ if ($result->num_rows > 0) {
             'model' => $modelName,
             'listOfAlgorithms' => $algorithm,
             'listOfCryptocurrencies' => $coins,
-            'miningCosts' => 'MiningCosts ' . $i,
-            'miningModel' => 'miningModel ' . $i,
-            'dailyProfitOfMiner' => 'MiningCosts ' . $i,
+            'miningCosts' => $averageMiningCosts30,
+            'miningModel' => $miningModelsByCompany,
+            'dailyProfitOfMiner' => $averageMiningProfit30,
             'numberOfMiningModels'  => 'numberOfMiningModels ' . $i,
             'dayToday' => date('F jS, Y', strtotime("now")),
             'monthToday' => date('F, Y', strtotime("now")),
@@ -145,11 +148,33 @@ function getCoinList ($postID, $conn) {
     
     $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $coins . ")";
     
-    $res = $conn->query($str);
+    $res = $conn->query($str) or die($conn->error);;
     $dat = "";
     while($ro = $res->fetch_assoc()) {
         $dat .= $ro["post_title"] . ", ";
     }
     $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
     return $dat;
+}
+
+function getMiningCosts ($postID, $conn) {
+    $res = $conn->query("SELECT avg(daily_costs) FROM wp_miningprofitability WHERE created_at >= NOW() - INTERVAL 30 DAY AND post_id = " . $postID . ";")->fetch_assoc()["avg(daily_costs)"];
+    return $res;
+}
+
+function getMiningProfitability ($postID, $conn) {
+    $res = $conn->query("SELECT avg(daily_grossProfit) FROM wp_miningprofitability WHERE created_at >= NOW() - INTERVAL 30 DAY AND post_id = " . $postID . ";")->fetch_assoc()["avg(daily_grossProfit)"];
+    return $res;
+}
+
+function getminingModelsByCompany($postID, $manufacturer, $conn) {
+    $query = "SELECT P.ID, P.post_title, P.post_content, P.post_author, meta_value
+FROM wp_posts AS P
+LEFT JOIN wp_postmeta AS PM on PM.post_id = P.ID
+WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer ."' 
+ORDER BY P.post_date DESC";
+
+    $val = $conn->query(query)->fetch_assoc()["post_title"];
+    
+    return $val;
 }
