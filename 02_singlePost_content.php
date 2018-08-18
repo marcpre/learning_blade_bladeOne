@@ -52,6 +52,9 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         // array_push($data, $row);
         
+        echo "Get variables: " . $row["ID"] .  "\n";
+        // $row["ID"] = 605;
+        
         $manufacturer = $conn->query(createMetaQuery($row["ID"], 'manufacturer'))->fetch_assoc()["meta_value"];
         $algorithm = $conn->query(createMetaQuery($row["ID"], 'algorithm'))->fetch_assoc()["meta_value"];
         $hashRate = $conn->query(createMetaQuery($row["ID"], 'hash_rate'))->fetch_assoc()["meta_value"];
@@ -77,7 +80,7 @@ if ($result->num_rows > 0) {
             'miningCosts' => $averageMiningCosts30,
             'miningModel' => $miningModelsByCompany,
             'dailyProfitOfMiner' => $averageMiningProfit30,
-            'numberOfMiningModels'  => 'numberOfMiningModels ' . $i,
+            'numberOfMiningModels'  => $miningModelsByCompany,
             'dayToday' => date('F jS, Y', strtotime("now")),
             'monthToday' => date('F, Y', strtotime("now")),
         ));
@@ -114,7 +117,8 @@ foreach ($data as $key => $value) {
     $output = str_replace("&nbsp;"," ",$output);
     $output = str_replace("/\s+/"," ",$output); // replace 1 or more spaces
     
-    $finalOutput .= $spintax->process($output);   
+    $finalOutput .= $spintax->process($output);
+    $finalOutput = str_replace("/\s+/"," ",$finalOutput); // replace 1 or more spaces   
     
     $finalOutput .= "\n ######################### \n";
     echo $finalOutput;
@@ -145,8 +149,24 @@ function createPostIDQuery ($postID) {
 
 function getCoinList ($postID, $conn) {
     $coins = $conn->query(createMetaQuery($postID, 'related_coins'))->fetch_assoc()["meta_value"];
+
+    if(empty($coins)) {
+        return "";
+    }
     
-    $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $coins . ")";
+
+    if(is_serialized($coins)) {
+        $coins = unserialize($coins);
+        $para = "";
+        foreach ($coins as $key => $value) {
+            $para .= $coins[$key] . ", ";
+        }
+        $para = preg_replace("/,\s$/", '', $para ); //remove last , from string
+    } else {
+        $para = $coins;
+    }
+    
+    $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $para . ")";
     
     $res = $conn->query($str) or die($conn->error);;
     $dat = "";
@@ -173,8 +193,40 @@ FROM wp_posts AS P
 LEFT JOIN wp_postmeta AS PM on PM.post_id = P.ID
 WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer ."' 
 ORDER BY P.post_date DESC";
-
-    $val = $conn->query(query)->fetch_assoc()["post_title"];
     
-    return $val;
+    $res = $conn->query($query) or die($conn->error);;
+    $dat = "";
+    while($ro = $res->fetch_assoc()) {
+        $dat .= $ro["post_title"] . ", ";
+    }
+    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
+    $dat = str_replace($manufacturer, '', $dat ); //remove last , from string
+    $dat = trim($dat);
+    return $dat;
+}
+
+function is_serialized( $data ) {
+    // if it isn't a string, it isn't serialized
+    if ( !is_string( $data ) )
+        return false;
+    $data = trim( $data );
+    if ( 'N;' == $data )
+        return true;
+    if ( !preg_match( '/^([adObis]):/', $data, $badions ) )
+        return false;
+    switch ( $badions[1] ) {
+        case 'a' :
+        case 'O' :
+        case 's' :
+            if ( preg_match( "/^{$badions[1]}:[0-9]+:.*[;}]\$/s", $data ) )
+                return true;
+            break;
+        case 'b' :
+        case 'i' :
+        case 'd' :
+            if ( preg_match( "/^{$badions[1]}:[0-9.E-]+;\$/", $data ) )
+                return true;
+            break;
+    }
+    return false;
 }
