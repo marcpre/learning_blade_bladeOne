@@ -65,6 +65,7 @@ if ($result->num_rows > 0) {
         $averageMiningCosts30 = getMiningCosts($row["ID"], $conn);
         $averageMiningProfit30 = getMiningProfitability($row["ID"], $conn);
         $miningModelsByCompany = getminingModelsByCompany($row["ID"], $manufacturer, $conn);
+        $currentPrice = getCurrentPrice($row["ID"], $conn);
 
         $i++;
         array_push($data, array(
@@ -72,15 +73,16 @@ if ($result->num_rows > 0) {
             'company' => $manufacturer,
             'category' => $category,
             'algorithm' => $algorithm,
-            'hashRate' => $hashRate,
-            'powerConsumption' => $powerConsumption,
+            'hashRate' => number_format($hashRate),
+            'powerConsumption' => number_format($powerConsumption),
             'model' => $modelName,
             'listOfAlgorithms' => $algorithm,
             'listOfCryptocurrencies' => $coins,
-            'miningCosts' => $averageMiningCosts30,
+            'miningCosts' => number_format((float)$averageMiningCosts30, 2, '.', ''),
             'miningModel' => $miningModelsByCompany,
-            'dailyProfitOfMiner' => $averageMiningProfit30,
+            'dailyProfitOfMiner' => number_format((float)$averageMiningProfit30, 5, '.', ''),
             'numberOfMiningModels'  => $miningModelsByCompany,
+            'currentPrice' => number_format((float)$currentPrice),
             'dayToday' => date('F jS, Y', strtotime("now")),
             'monthToday' => date('F, Y', strtotime("now")),
         ));
@@ -117,10 +119,11 @@ foreach ($data as $key => $value) {
     $output = str_replace("&nbsp;"," ",$output);
     $output = str_replace("/\s+/"," ",$output); // replace 1 or more spaces
     
-    $finalOutput .= $spintax->process($output);
-    $finalOutput = str_replace("/\s+/"," ",$finalOutput); // replace 1 or more spaces   
-    
+    $finalOutput .= $spintax->process($output);   
     $finalOutput .= "\n ######################### \n";
+
+    $finalOutput = str_replace("/\s+/"," ",$finalOutput); // replace 1 or more spaces   
+
     echo $finalOutput;
     // echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output) . "\n";
 }
@@ -202,6 +205,32 @@ ORDER BY P.post_date DESC";
     $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
     $dat = str_replace($manufacturer, '', $dat ); //remove last , from string
     $dat = trim($dat);
+    return $dat;
+}
+
+function getCurrentPrice ($postID, $conn) {
+    $arr = $conn->query(createMetaQuery($postID, '_cegg_data_Amazon'))->fetch_assoc()["meta_value"];
+
+    if(empty($arr)) {
+        return "";
+    }
+    
+
+    if(is_serialized($arr)) {
+        $arr = unserialize($arr);
+        $arr = reset($arr);
+        return $arr["price"];
+    } 
+    /*
+    $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $para . ")";
+    
+    $res = $conn->query($str) or die($conn->error);;
+    $dat = "";
+    while($ro = $res->fetch_assoc()) {
+        $dat .= $ro["post_title"] . ", ";
+    }
+    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
+    */
     return $dat;
 }
 
