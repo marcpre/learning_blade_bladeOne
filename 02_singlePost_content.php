@@ -2,6 +2,8 @@
 require "vendor/autoload.php";
 require "src/Spintax/Spintax.php";
 
+error_reporting(E_ALL ^ E_NOTICE);  
+
 use eftec\bladeone;
 use DaveChild\TextStatistics as TS;
 use Noodlehaus\Config;
@@ -280,16 +282,13 @@ function getAmazon($postID, $tag, $conn) {
     if(empty($arr)) {
         return "";
     }
-    try {
-        if(is_serialized($arr) && unserialize($arr)) {
-            $arr = unserialize($arr);
-            $arr = reset($arr);
-            return $arr[$tag];
-        } else {
-            $dat = $tag . " not available.";
-        }
-    } catch(\Exception e){
-        
+
+    if(is_serialized($arr) && unserialize($arr)) {
+        $arr = unserialize($arr);
+        $arr = reset($arr);
+        return $arr[$tag];
+    } else {
+        $dat = $tag . " not available.";
     }
     return $dat;
 }
