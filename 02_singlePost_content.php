@@ -6,6 +6,7 @@ use eftec\bladeone;
 use DaveChild\TextStatistics as TS;
 use Noodlehaus\Config;
 use Spintax;
+use Noodlehaus\Exception;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
@@ -53,7 +54,7 @@ if ($result->num_rows > 0) {
         // array_push($data, $row);
         
         echo "Get variables: " . $row["ID"] .  "\n";
-        // $row["ID"] = 605;
+        $row["ID"] = 4204;
         
         $manufacturer = $conn->query(createMetaQuery($row["ID"], 'manufacturer'))->fetch_assoc()["meta_value"];
         $algorithm = $conn->query(createMetaQuery($row["ID"], 'algorithm'))->fetch_assoc()["meta_value"];
@@ -66,6 +67,7 @@ if ($result->num_rows > 0) {
         $averageMiningProfit30 = getMiningProfitability($row["ID"], $conn);
         $miningModelsByCompany = getminingModelsByCompany($row["ID"], $manufacturer, $conn);
         $currentPrice = getCurrentPrice($row["ID"], $conn);
+        $comparisonTableArray = getComparisonTable($row["ID"], $manufacturer, $conn);
 
         $i++;
         array_push($data, array(
@@ -85,6 +87,7 @@ if ($result->num_rows > 0) {
             'currentPrice' => number_format((float)$currentPrice),
             'dayToday' => date('F jS, Y', strtotime("now")),
             'monthToday' => date('F, Y', strtotime("now")),
+            'comparisonTableArray' => $comparisonTableArray,
         ));
     }
 } else {
@@ -134,9 +137,26 @@ file_put_contents("./SINGLE_CONTENT_OUTPUT.txt", $finalOutput);
 $conn->close();
 
 
+/**
+ * Functions
+ **/
+
 function createMetaQuery ($postID, $metaValue) {
     $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
     return $str;
+}
+
+function getMetaQuery($postID, $metaValue, $conn) {
+    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
+    
+    $res = $conn->query($str)->fetch_assoc() or die($conn->error);;
+    $dat = "";
+    /*
+    while($ro = $res->fetch_assoc()) {
+        $dat .= $ro["post_title"] . ", ";
+    }
+    */
+    return $res;
 }
 
 function createPostIDQuery ($postID) {
@@ -208,6 +228,35 @@ ORDER BY P.post_date DESC";
     return $dat;
 }
 
+function getComparisonTable($postID, $manufacturer, $conn) {
+    $query = "SELECT P.ID, P.post_title, P.post_content, P.post_author, meta_value, P.guid
+FROM wp_posts AS P
+LEFT JOIN wp_postmeta AS PM on PM.post_id = P.ID
+WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer ."' 
+ORDER BY P.post_date DESC";
+    
+    $res = $conn->query($query) or die($conn->error);;
+    $dat = array();
+    while($ro = $res->fetch_assoc()) {
+        
+        $watt = getMetaQuery($ro["ID"], 'watt_estimate', $conn);
+        $hashRate = getMetaQuery($ro["ID"], 'hash_rate', $conn);
+        $amzLink = getAmazon($ro["ID"], 'url', $conn);
+        $image = getAmazon($ro["ID"], 'img', $conn);
+          
+        array_push($dat, array(
+            'model' => $ro["post_title"], 
+            'image' => $image, 
+            'watt' => $watt["meta_value"],
+            'hashRate' => $hashRate["meta_value"],
+            'link' => $ro["guid"], 
+            'amzLink' => $amzLink,
+        ));
+    }
+
+    return $dat;
+}
+
 function getCurrentPrice ($postID, $conn) {
     $arr = $conn->query(createMetaQuery($postID, '_cegg_data_Amazon'))->fetch_assoc()["meta_value"];
 
@@ -215,22 +264,33 @@ function getCurrentPrice ($postID, $conn) {
         return "";
     }
     
-
-    if(is_serialized($arr)) {
+    if(is_serialized($arr) && unserialize($arr)) {
         $arr = unserialize($arr);
         $arr = reset($arr);
         return $arr["price"];
-    } 
-    /*
-    $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $para . ")";
-    
-    $res = $conn->query($str) or die($conn->error);;
-    $dat = "";
-    while($ro = $res->fetch_assoc()) {
-        $dat .= $ro["post_title"] . ", ";
+    } else {
+        $dat = "Price not available.";
     }
-    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
-    */
+    return $dat;
+}
+
+function getAmazon($postID, $tag, $conn) {
+    $arr = $conn->query(createMetaQuery($postID, '_cegg_data_Amazon'))->fetch_assoc()["meta_value"];
+
+    if(empty($arr)) {
+        return "";
+    }
+    try {
+        if(is_serialized($arr) && unserialize($arr)) {
+            $arr = unserialize($arr);
+            $arr = reset($arr);
+            return $arr[$tag];
+        } else {
+            $dat = $tag . " not available.";
+        }
+    } catch(\Exception e){
+        
+    }
     return $dat;
 }
 

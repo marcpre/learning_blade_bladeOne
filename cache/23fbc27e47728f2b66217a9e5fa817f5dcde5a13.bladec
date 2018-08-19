@@ -1,6 +1,6 @@
-<p></p><p><insertdata><?php echo static::e($company); ?></insertdata> is still one of the <synonym words="world most well known mining rig building companies| ">world premier ASIC manufacture</synonym><synonym words="world most well known mining rig building companies| "></synonym> and it’s no secret that their <synonym words="mining rigs| rigs| computer hardware">hardware </synonym><synonym words="is used widely across the BTC network| that many miners use their hardware"> powers most of the Bitcoin network</synonym>. If you want to mine <synonym words="BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -">Bitcoin</synonym>, you are better off buying <synonym words="computer hardware| mining rigs| mining hardware">hardware</synonym> from <insertdata><?php echo static::e($company); ?></insertdata>. The <synonym words="company| manufacturer| mining rig builder| cooperation">firm</synonym> <synonym words="brought to the market| is selling"> launched </synonym>the <insertdata><?php echo static::e($model); ?></insertdata>, their <synonym words="latest computer hardware">latest miner</synonym><synonym words=""></synonym>.<br></p>
+<p></p><p></p><p><insertdata><?php echo static::e($company); ?></insertdata> is still one of the <synonym words="world most well known mining rig building companies| ">world premier </synonym><insertdata><?php echo static::e($company); ?></insertdata><synonym words="world most well known mining rig building companies| "> manufacture</synonym><synonym words="world most well known mining rig building companies| "></synonym> and it’s no secret that their <synonym words="mining rigs| rigs| computer hardware">hardware </synonym><synonym words="is used widely across the BTC network| that many miners use their hardware"> powers most of the Bitcoin network</synonym>. If you want to mine <synonym words="BTC| the Bitcoin cryptocurrency| the most well known coin - BTC -">Bitcoin</synonym>, you are better off buying <synonym words="computer hardware| mining rigs| mining hardware">hardware</synonym> from <insertdata><?php echo static::e($company); ?></insertdata>. The <synonym words="company| manufacturer| mining rig builder| cooperation">firm</synonym> <synonym words="brought to the market| is selling"> launched </synonym>the <insertdata><?php echo static::e($model); ?></insertdata>, their <synonym words="latest computer hardware">latest miner</synonym><synonym words=""></synonym>.<br></p>
 <p>The<ifelse><?php if( count( $category ) === 1 ): ?> <insertdata><?php echo static::e($category); ?></insertdata> <?php endif; ?> </ifelse><synonym words="miner">model</synonym> <insertdata><?php echo static::e($miningModel); ?></insertdata> from <?php echo static::e($company); ?> was previously under the <synonym words="top| best| most profitable">top 3</synonym> miners on coindation.com. 
-It is mining <insertdata><?php echo static::e($algorithm); ?></insertdata> algorithm with a <synonym words=" | max">maximum </synonym>hashrate of <insertdata><?php echo static::e($hashRate); ?></insertdata> <synonym words="and a power consumption of| consuming power as much as">for a power consumption of</synonym> <insertdata><?php echo static::e($powerConsumption); ?></insertdata>.
+It is mining <insertdata><?php echo static::e($algorithm); ?></insertdata> algorithm with a <synonym words=" | max">maximum </synonym><synonym words="Hash-Rate">hashrate</synonym> of <insertdata><?php echo static::e($hashRate); ?></insertdata> <synonym words="and a power consumption of| consuming power as much as">for a power consumption of</synonym> <insertdata><?php echo static::e($powerConsumption); ?>W</insertdata>.
 <ifelse>
 <?php if(count( $listOfAlgorithms ) === 1): ?>
  The model focuses on the following algorithms: <insertdata><?php echo static::e($listOfAlgorithms); ?></insertdata>. 
@@ -11,9 +11,56 @@ It is mining <insertdata><?php echo static::e($algorithm); ?></insertdata> algor
 <?php endif; ?> </ifelse> You can mine with the <insertdata><?php echo static::e($model); ?></insertdata> the <synonym words=" ">following </synonym><synonym words="crypto-coins|cryptocurrencies">coins</synonym>: <insertdata><?php echo static::e($listOfCryptocurrencies); ?></insertdata></p><p>
 
 </p><h2><synonym words=" Pros/Cons| Plus/Minuses| Like/dislike">Advantages/Disadvantages</synonym></h2>
-<ul><li>Insert Randomly here advantages/disadvantages</li></ul>
-
+'+'-es
+ <ul>
+ <li><synonym words="<?php echo static::e($model); ?>">The <?php echo static::e($model); ?></synonym> <synonym words="is not that expensive">is quite affordable</synonym></li>
+ <li><synonym words="Watt usage is low, wattage is: <?php echo static::e($powerConsumption); ?>, Watt usage of <?php echo static::e($powerConsumption); ?>">Low watt usage of:&nbsp;</synonym><insertdata><?php echo static::e($powerConsumption); ?></insertdata></li><li>With the <synonym words=",algorithm">current algorithm</synonym>,&nbsp;<insertdata><?php echo static::e($algorithm); ?>,</insertdata>&nbsp;<synonym words="numerous, ,various">multiple</synonym>&nbsp;<synonym words="cryptos, coins">cryptocurrencies</synonym> can be mined</li><li><synonym words="Powerful, Massive, Notable">Impressive</synonym> Hash Rate:&nbsp;<insertdata><?php echo static::e($hashRate); ?></insertdata></li>
+<li><synonym words="Small for its size">Does not require lots of space</synonym><synonym words="Doesn`t"></synonym></li>
+<li><insertdata><?php echo static::e($model); ?></insertdata> is profitable in <insertdata><?php echo static::e($daysUntilProfitable); ?></insertdata></li>
+ </ul>
+'-'-es
+ <ul>
+ <li><synonym words="The <?php echo static::e($model); ?>"><?php echo static::e($model); ?></synonym><insertdata></insertdata> is <synonym words="not cheap, costly, high-priced">quite expensive</synonym></li>
+ <li><synonym words="Watt is high with <?php echo static::e($powerConsumption); ?>, Watt is <?php echo static::e($powerConsumption); ?>">Watt usage is high</synonym></li><li><synonym words="Profitability is very low with this <?php echo static::e($model); ?>">Mining is not profitable with the <?php echo static::e($model); ?></synonym><synonym words="Cryptocurrency Mining, Crypto mining"></synonym></li>
+ </ul>
 
 <h2><synonym words="Expenses| Electricity Costs| Operating Costs| Operating Expenses| Costs for Electricity| Costs for Operating the Rig">Costs</synonym><b></b></h2>In our profitability calculations we assume an overall price of 0.1. Hence we derive a cost baseline of&nbsp;<insertdata><?php echo static::e($miningCosts); ?></insertdata>&nbsp;. Hence the miner has&nbsp;<insertdata><?php echo static::e($dailyProfitOfMiner); ?></insertdata>&nbsp;until the miner gets profitable. (as per <insertdata><?php echo static::e($monthToday); ?></insertdata>). <synonym words="We define 'payback period' as| 'Payback Period' is defined for us as| The definition of payback period is">Our definition of payback period is</synonym>: <synonym words="Number of days to make your initial costs back">The time that it takes the cryptominer to make its money back in days</synonym>. As crypto markets have been proven in the past to be <synonym words="quite volatile| fluctuating">unpredictable</synonym> we can only use as current starting point the <synonym words="price of BTC.| BTC price.">current price of BTC.</synonym><p></p>
 
-<h2><synonym words="Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models">Comparison</synonym></h2><p>Find below our comparison table of similar models from <insertdata><?php echo static::e($company); ?></insertdata>:</p><table class="table table-bordered"><tbody><tr><td><b>Model</b></td><td><b>Description</b></td><td><b>Review</b></td><td><b>Buy Now</b></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr><tr><td><br></td><td><br></td><td><br></td><td><br></td></tr></tbody></table><p>As you can see company has currently&nbsp;<insertdata><?php echo static::e($numberOfMiningModels); ?></insertdata> on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
+<h2><synonym words="Comparison Table, Comparison, Overview, Overview Table, Side-By-Side Comparison, Similar Models">Comparison</synonym></h2><p>Find below our comparison table of similar models from <insertdata><?php echo static::e($company); ?></insertdata>:</p>
+<?php /* Comparison Table START */ ?>
+<table class="table table-bordered">
+ <thead>
+ <tr>
+ <td>
+ <b>Model</b>
+ </td>
+ <td>
+ <b>Hash Rate</b>
+ </td>
+ <td>
+ <b>Watt</b>
+ </td>
+ <td>
+ <b>Review Link</b>
+ </td>
+ <td>
+ <b>Buy Now</b>
+ </td>
+ </tr>
+ </thead>
+ <tbody>
+ <?php $__currentLoopData = $comparisonTableArray; $this->addLoop($__currentLoopData); foreach($__currentLoopData as $arr): $this->incrementLoopIndices(); $loop = $this->getFirstLoop(); ?>
+ <tr>
+ <td> <?php echo static::e($arr->model); ?> </td>
+ <td> <?php echo static::e($arr->hashRate); ?> </td>
+ <td> <?php echo static::e($arr->watt); ?> </td>
+ <td> <a href="<?php echo static::e($arr->link); ?>" target="_blank">Review of <?php echo static::e($arr->model); ?></a> </td>
+ <td> <a href="<?php echo static::e($arr->amzLink); ?>" target="_blank">Buy Now</a> </td>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </tbody>
+</table>
+<?php /* Comparison Table END */ ?>
+
+<p>As you can see company has currently&nbsp;<insertdata><?php echo static::e($numberOfMiningModels); ?></insertdata> on the market.</p><p>Find below deeper information about profitability, costs and specific coins to mine.</p>
+<p></p>
