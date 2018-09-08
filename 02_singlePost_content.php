@@ -2,18 +2,18 @@
 require "vendor/autoload.php";
 require "src/Spintax/Spintax.php";
 
-error_reporting(E_ALL ^ E_NOTICE);  
+// error_reporting(E_ALL ^ E_NOTICE);  
 
 use eftec\bladeone;
 use DaveChild\TextStatistics as TS;
 use Noodlehaus\Config;
-use Spintax;
+// use Spintax;
 use Noodlehaus\Exception;
 
 $views = __DIR__ . '/views';
 $cache = __DIR__ . '/cache';
 define("BLADEONE_MODE", 1); // (optional) 1=forced (test),2=run fast (production), 0=automatic, default value.
-$blade = new bladeone\BladeOne($views,$cache);
+$blade = new bladeone\BladeOne($views, $cache);
 
 $textStatistics = new TS\TextStatistics;
 
@@ -32,7 +32,8 @@ $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error . " \n");
-} 
+}
+mysqli_set_charset($con, "utf8");
 echo "Connected successfully \n";
 
 $posts = "SELECT  wp_posts.* 
@@ -52,45 +53,51 @@ $data = array();
 $i = 0;
 if ($result->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         // array_push($data, $row);
-        
-        echo "Get variables: " . $row["ID"] .  "\n";
-        $row["ID"] = 4204;
-        
-        $manufacturer = $conn->query(createMetaQuery($row["ID"], 'manufacturer'))->fetch_assoc()["meta_value"];
-        $algorithm = $conn->query(createMetaQuery($row["ID"], 'algorithm'))->fetch_assoc()["meta_value"];
-        $hashRate = $conn->query(createMetaQuery($row["ID"], 'hash_rate'))->fetch_assoc()["meta_value"];
-        $powerConsumption = $conn->query(createMetaQuery($row["ID"], 'watt_estimate'))->fetch_assoc()["meta_value"];
-        $modelName = $row["post_title"];
-        $category = $conn->query(createPostIDQuery($row["ID"]))->fetch_assoc()["name"];
-        $coins = getCoinList($row["ID"], $conn);
-        $averageMiningCosts30 = getMiningCosts($row["ID"], $conn);
-        $averageMiningProfit30 = getMiningProfitability($row["ID"], $conn);
-        $miningModelsByCompany = getminingModelsByCompany($row["ID"], $manufacturer, $conn);
-        $currentPrice = getCurrentPrice($row["ID"], $conn);
-        $comparisonTableArray = getComparisonTable($row["ID"], $manufacturer, $conn);
 
-        $i++;
-        array_push($data, array(
-            'postId' => $row["ID"], 
-            'company' => $manufacturer,
-            'category' => $category,
-            'algorithm' => $algorithm,
-            'hashRate' => number_format($hashRate),
-            'powerConsumption' => number_format($powerConsumption),
-            'model' => $modelName,
-            'listOfAlgorithms' => $algorithm,
-            'listOfCryptocurrencies' => $coins,
-            'miningCosts' => number_format((float)$averageMiningCosts30, 2, '.', ''),
-            'miningModel' => $miningModelsByCompany,
-            'dailyProfitOfMiner' => number_format((float)$averageMiningProfit30, 5, '.', ''),
-            'numberOfMiningModels'  => $miningModelsByCompany,
-            'currentPrice' => number_format((float)$currentPrice),
-            'dayToday' => date('F jS, Y', strtotime("now")),
-            'monthToday' => date('F, Y', strtotime("now")),
-            'comparisonTableArray' => $comparisonTableArray,
-        ));
+        // TODO remove after finish
+        if ($row["ID"] == 4204) {
+
+            echo "Get variables: " . $row["ID"] . "\n";
+
+            $manufacturer = $conn->query(createMetaQuery($row["ID"], 'manufacturer'))->fetch_assoc()["meta_value"];
+            $algorithm = $conn->query(createMetaQuery($row["ID"], 'algorithm'))->fetch_assoc()["meta_value"];
+            $hashRate = $conn->query(createMetaQuery($row["ID"], 'hash_rate'))->fetch_assoc()["meta_value"];
+            $powerConsumption = $conn->query(createMetaQuery($row["ID"], 'watt_estimate'))->fetch_assoc()["meta_value"];
+            $modelName = $row["post_title"];
+            $category = $conn->query(createPostIDQuery($row["ID"]))->fetch_assoc()["name"];
+            $coins = getCoinList($row["ID"], $conn);
+            $averageMiningCosts30 = getMiningCosts($row["ID"], $conn);
+            $averageMiningProfit30 = getMiningProfitability($row["ID"], $conn);
+            $miningModelsByCompany = getminingModelsByCompany($row["ID"], $manufacturer, $conn);
+            $currentPrice = getAmazon($row["ID"], 'price', $conn);
+            $comparisonTableArray = getComparisonTable($row["ID"], $manufacturer, $conn);
+
+            $i++;
+            array_push($data, array(
+                'postId' => $row["ID"],
+                'company' => $manufacturer,
+                'category' => $category,
+                'algorithm' => $algorithm,
+                'hashRate' => number_format($hashRate),
+                'powerConsumption' => number_format($powerConsumption),
+                'model' => $modelName,
+                'listOfAlgorithms' => $algorithm,
+                'listOfCryptocurrencies' => $coins,
+                'miningCosts' => number_format((float)$averageMiningCosts30, 2, '.', ''),
+                'miningModel' => $miningModelsByCompany,
+                'dailyProfitOfMiner' => number_format((float)$averageMiningProfit30, 5, '.', ''),
+                'numberOfMiningModels' => $miningModelsByCompany,
+                'currentPrice' => number_format((float)$currentPrice),
+                'dayToday' => date('F jS, Y', strtotime("now")),
+                'monthToday' => date('F, Y', strtotime("now")),
+                'comparisonTableArray' => $comparisonTableArray,
+            ));
+
+            // TODO remove after finish
+            break;
+        } // TODO also remove this!
     }
 } else {
     echo "0 results";
@@ -105,29 +112,29 @@ $finalOutput = '';
 $spintax = new Spintax();
 foreach ($data as $key => $value) {
     print_r($data[$key]);
-    
+
     $output = '';
-    
+
     $output = $blade->run("singlePost", $data[$key]);
     // create spintax
-    $output = str_replace("</synonym>","}",$output);
-    $output = str_replace("\">","|",$output);
-    $output = str_replace("<synonym words=\"","{",$output);
+    $output = str_replace("</synonym>", "}", $output);
+    $output = str_replace("\">", "|", $output);
+    $output = str_replace("<synonym words=\"", "{", $output);
 
     // replace tags
-    $output = str_replace("<insertdata>","",$output);
-    $output = str_replace("</insertdata>","",$output);
-    $output = str_replace("<ifelse>","",$output);
-    $output = str_replace("</ifelse>","",$output);
-     
+    $output = str_replace("<insertdata>", "", $output);
+    $output = str_replace("</insertdata>", "", $output);
+    $output = str_replace("<ifelse>", "", $output);
+    $output = str_replace("</ifelse>", "", $output);
+
     // &nbsp;
-    $output = str_replace("&nbsp;"," ",$output);
-    $output = str_replace("/\s+/"," ",$output); // replace 1 or more spaces
-    
-    $finalOutput .= $spintax->process($output);   
+    $output = str_replace("&nbsp;", " ", $output);
+    $output = str_replace("  +", " ", $output); // replace 1 or more spaces
+
+    $finalOutput .= $spintax->process($output);
     $finalOutput .= "\n ######################### \n";
 
-    $finalOutput = str_replace("/\s+/"," ",$finalOutput); // replace 1 or more spaces   
+    $finalOutput = str_replace("  +", " ", $finalOutput); // replace 1 or more spaces
 
     echo $finalOutput;
     // echo 'Flesch-Kincaid Reading Ease: ' . $textStatistics->fleschKincaidReadingEase($output) . "\n";
@@ -140,17 +147,25 @@ $conn->close();
 
 
 /**
- * Functions
+ * ***********************************************
+ * ***********************************************
+ * ***********************************************
+ * *******************Functions*******************
+ * ***********************************************
+ * ***********************************************
+ * ***********************************************
  **/
 
-function createMetaQuery ($postID, $metaValue) {
-    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
+function createMetaQuery($postID, $metaValue)
+{
+    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID . " and meta_key = '" . $metaValue . "' LIMIT 1;";
     return $str;
 }
 
-function getMetaQuery($postID, $metaValue, $conn) {
-    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID ." and meta_key = '" . $metaValue ."' LIMIT 1;";
-    
+function getMetaQuery($postID, $metaValue, $conn)
+{
+    $str = "SELECT * FROM wp_postmeta WHERE post_id = " . $postID . " and meta_key = '" . $metaValue . "' LIMIT 1;";
+
     $res = $conn->query($str)->fetch_assoc() or die($conn->error);;
     $dat = "";
     /*
@@ -161,97 +176,103 @@ function getMetaQuery($postID, $metaValue, $conn) {
     return $res;
 }
 
-function createPostIDQuery ($postID) {
+function createPostIDQuery($postID)
+{
     $str = "SELECT t.* 
     FROM `wp_terms` t
     JOIN `wp_term_taxonomy` tt ON(t.`term_id` = tt.`term_id`)
     JOIN `wp_term_relationships` ttr ON(ttr.`term_taxonomy_id` = tt.`term_taxonomy_id`)
     WHERE tt.`taxonomy` = 'category'
     AND ttr.`object_id` = " . $postID;
-    
+
     return $str;
 }
 
-function getCoinList ($postID, $conn) {
+function getCoinList($postID, $conn)
+{
     $coins = $conn->query(createMetaQuery($postID, 'related_coins'))->fetch_assoc()["meta_value"];
 
-    if(empty($coins)) {
+    if (empty($coins)) {
         return "";
     }
-    
 
-    if(is_serialized($coins)) {
+    if (is_serialized($coins)) {
         $coins = unserialize($coins);
         $para = "";
         foreach ($coins as $key => $value) {
             $para .= $coins[$key] . ", ";
         }
-        $para = preg_replace("/,\s$/", '', $para ); //remove last , from string
+        $para = preg_replace("/,\s$/", '', $para); //remove last , from string
     } else {
         $para = $coins;
     }
-    
+
     $str = "SELECT * FROM `wp_posts` WHERE ID IN (" . $para . ")";
-    
+
     $res = $conn->query($str) or die($conn->error);;
     $dat = "";
-    while($ro = $res->fetch_assoc()) {
+    while ($ro = $res->fetch_assoc()) {
         $dat .= $ro["post_title"] . ", ";
     }
-    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
+    $dat = preg_replace("/,\s$/", '', $dat); //remove last , from string
     return $dat;
 }
 
-function getMiningCosts ($postID, $conn) {
+function getMiningCosts($postID, $conn)
+{
     $res = $conn->query("SELECT avg(daily_costs) FROM wp_miningprofitability WHERE created_at >= NOW() - INTERVAL 30 DAY AND post_id = " . $postID . ";")->fetch_assoc()["avg(daily_costs)"];
     return $res;
 }
 
-function getMiningProfitability ($postID, $conn) {
+function getMiningProfitability($postID, $conn)
+{
     $res = $conn->query("SELECT avg(daily_grossProfit) FROM wp_miningprofitability WHERE created_at >= NOW() - INTERVAL 30 DAY AND post_id = " . $postID . ";")->fetch_assoc()["avg(daily_grossProfit)"];
     return $res;
 }
 
-function getminingModelsByCompany($postID, $manufacturer, $conn) {
+function getminingModelsByCompany($postID, $manufacturer, $conn)
+{
     $query = "SELECT P.ID, P.post_title, P.post_content, P.post_author, meta_value
 FROM wp_posts AS P
 LEFT JOIN wp_postmeta AS PM on PM.post_id = P.ID
-WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer ."' 
+WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer . "' 
 ORDER BY P.post_date DESC";
-    
+
     $res = $conn->query($query) or die($conn->error);;
     $dat = "";
-    while($ro = $res->fetch_assoc()) {
+    while ($ro = $res->fetch_assoc()) {
         $dat .= $ro["post_title"] . ", ";
     }
-    $dat = preg_replace("/,\s$/", '', $dat ); //remove last , from string
-    $dat = str_replace($manufacturer, '', $dat ); //remove last , from string
+    $dat = preg_replace("/,\s$/", '', $dat); //remove last , from string
+    $dat = str_replace($manufacturer, '', $dat); //remove last , from string
     $dat = trim($dat);
     return $dat;
 }
 
-function getComparisonTable($postID, $manufacturer, $conn) {
+function getComparisonTable($postID, $manufacturer, $conn)
+{
     $query = "SELECT P.ID, P.post_title, P.post_content, P.post_author, meta_value, P.guid
 FROM wp_posts AS P
 LEFT JOIN wp_postmeta AS PM on PM.post_id = P.ID
-WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer ."' 
+WHERE P.post_type = 'computer-hardware' and P.post_status = 'publish' and meta_value = '" . $manufacturer . "' 
 ORDER BY P.post_date DESC";
-    
+
+
     $res = $conn->query($query) or die($conn->error);;
     $dat = array();
-    while($ro = $res->fetch_assoc()) {
-        
+    while ($ro = $res->fetch_assoc()) {
+
         $watt = getMetaQuery($ro["ID"], 'watt_estimate', $conn);
         $hashRate = getMetaQuery($ro["ID"], 'hash_rate', $conn);
         $amzLink = getAmazon($ro["ID"], 'url', $conn);
         $image = getAmazon($ro["ID"], 'img', $conn);
-          
+
         array_push($dat, array(
-            'model' => $ro["post_title"], 
-            'image' => $image, 
+            'model' => $ro["post_title"],
+            'image' => $image,
             'watt' => $watt["meta_value"],
             'hashRate' => $hashRate["meta_value"],
-            'link' => $ro["guid"], 
+            'link' => $ro["guid"],
             'amzLink' => $amzLink,
         ));
     }
@@ -259,6 +280,7 @@ ORDER BY P.post_date DESC";
     return $dat;
 }
 
+/*
 function getCurrentPrice ($postID, $conn) {
     $arr = $conn->query(createMetaQuery($postID, '_cegg_data_Amazon'))->fetch_assoc()["meta_value"];
 
@@ -266,53 +288,73 @@ function getCurrentPrice ($postID, $conn) {
         return "";
     }
     
-    if(is_serialized($arr) && unserialize($arr)) {
+    if(!unserialize($arr)) {
+        $arr = preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $arr);
+        $arr = unserialize($arr);
+        $arr = reset($arr);
+        return $arr[$tag];
+    } elseif(is_serialized($arr)) {
         $arr = unserialize($arr);
         $arr = reset($arr);
         return $arr["price"];
     } else {
-        $dat = "Price not available.";
+        $dat = null;
     }
     return $dat;
 }
+*/
 
-function getAmazon($postID, $tag, $conn) {
+function getAmazon($postID, $tag, $conn)
+{
+    $conn->query("set names 'utf8';");
     $arr = $conn->query(createMetaQuery($postID, '_cegg_data_Amazon'))->fetch_assoc()["meta_value"];
+    // TODO The problem are the special characters! That's why unserialize is not working correctly!!!
+    // $arr = urldecode($arr);    
+    // $arr = unserialize($arr);
+    // print_r($arr);
+    // file_put_contents("./lolonator.txt", $arr);
 
-    if(empty($arr)) {
+    if (empty($arr)) {
         return "";
     }
 
-    if(is_serialized($arr) && unserialize($arr)) {
+    if (!unserialize($arr)) {
+        $arr = preg_replace('!s:(\d+):"(.*?)";!e', "'s:'.strlen('$2').':\"$2\";'", $arr);
+        $arr = unserialize($arr);
+        $arr = reset($arr);
+        return $arr[$tag];
+    } elseif (is_serialized($arr)) {
         $arr = unserialize($arr);
         $arr = reset($arr);
         return $arr[$tag];
     } else {
-        $dat = $tag . " not available.";
+        // $dat = $tag . " not available.";
+        $dat = null;
     }
     return $dat;
 }
 
-function is_serialized( $data ) {
+function is_serialized($data)
+{
     // if it isn't a string, it isn't serialized
-    if ( !is_string( $data ) )
+    if (!is_string($data))
         return false;
-    $data = trim( $data );
-    if ( 'N;' == $data )
+    $data = trim($data);
+    if ('N;' == $data)
         return true;
-    if ( !preg_match( '/^([adObis]):/', $data, $badions ) )
+    if (!preg_match('/^([adObis]):/', $data, $badions))
         return false;
-    switch ( $badions[1] ) {
+    switch ($badions[1]) {
         case 'a' :
         case 'O' :
         case 's' :
-            if ( preg_match( "/^{$badions[1]}:[0-9]+:.*[;}]\$/s", $data ) )
+            if (preg_match("/^{$badions[1]}:[0-9]+:.*[;}]\$/s", $data))
                 return true;
             break;
         case 'b' :
         case 'i' :
         case 'd' :
-            if ( preg_match( "/^{$badions[1]}:[0-9.E-]+;\$/", $data ) )
+            if (preg_match("/^{$badions[1]}:[0-9.E-]+;\$/", $data))
                 return true;
             break;
     }
