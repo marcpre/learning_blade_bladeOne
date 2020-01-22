@@ -1,0 +1,130 @@
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 3
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Muller, Beahan and Grimes
+<h2>IF-Case</h2>
+Ea eaque explicabo doloribus earum sit. Autem quo minima a blanditiis qui exercitationem. Aliquid et laborum ut odio vitae hic iusto quod. Tempora et et ea earum placeat omnis amet.
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 9
+  9
+  9
+  
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Justice Leffler V
+<h2>IF-Case</h2>
+A cupiditate provident fuga natus nesciunt. Deserunt neque cum voluptatem. Eligendi omnis quae ad in vero nobis delectus. Rerum ducimus nostrum aliquid qui aut libero.
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 1
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Crist-Paucek
+<h2>IF-Case</h2>
+Hi
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 9
+  9
+  9
+  
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Bartoletti-Goodwin
+<h2>IF-Case</h2>
+Sit dolorem consequatur delectus. Quidem molestias veritatis ut corporis. Explicabo et molestias quae et. Saepe odit est aut non.
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 9
+  9
+  9
+  
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Ray Wisozk
+<h2>IF-Case</h2>
+Hi
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 9
+  9
+  9
+  
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Architecto maiores voluptate nihil quia. Ut in tempora est. Sint itaque veritatis adipisci autem. Consequatur libero dolor nihil fugit consequatur totam.
+<h2>IF-Case</h2>
+Hi
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 3
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Ut natus in impedit a nesciunt dolores occaecati totam. Laborum fuga minima perferendis. Mollitia optio nihil autem ducimus et quibusdam ut. Fugiat placeat voluptas eveniet natus ea illum.
+<h2>IF-Case</h2>
+Ut natus in impedit a nesciunt dolores occaecati totam. Laborum fuga minima perferendis. Mollitia optio nihil autem ducimus et quibusdam ut. Fugiat placeat voluptas eveniet natus ea illum.
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 7
+  7
+  7
+  
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Quo rem sapiente eum doloremque debitis dolorem et. Ut ipsam assumenda qui rerum adipisci voluptatem corrupti. Eos non sed sit sed rerum perferendis.
+<h2>IF-Case</h2>
+Hi
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 1
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Dolorum tempore ut nesciunt pariatur nihil. Debitis minima quae vel aut nemo deserunt cumque. Quod vitae aut reiciendis nemo aliquam.
+<h2>IF-Case</h2>
+Dolorum tempore ut nesciunt pariatur nihil. Debitis minima quae vel aut nemo deserunt cumque. Quod vitae aut reiciendis nemo aliquam.
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 1
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+Suscipit quia ut culpa. Est omnis veritatis sunt similique ab. Repudiandae ad est magnam quasi asperiores voluptatem.
+<h2>IF-Case</h2>
+Hi
+<h2>IF-Case Complex</h2>
+Hi
+ ######################### 

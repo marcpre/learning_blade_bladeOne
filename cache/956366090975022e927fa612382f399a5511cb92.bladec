@@ -1,0 +1,40 @@
+
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+<?php if($randomElement < 4): ?>
+ <?php echo static::e($randomElement); ?>
+
+<?php else: ?>
+ <?php echo static::e($randomElement); ?>
+
+ <?php if($randomElement < 10): ?>
+ <?php echo static::e($randomElement); ?>
+
+ <?php if($randomElement < 3): ?>
+ <?php echo static::e($randomElement); ?>
+
+ <?php else: ?>
+ <?php echo static::e($randomElement); ?>
+
+ <?php endif; ?>
+ <?php else: ?>
+ <?php echo static::e($randomElement); ?>
+
+ <?php endif; ?>
+<?php endif; ?>
+
+<h1>Test Case 2 - If in Directive</h1>
+
+<h2>Normal Case</h2>
+<?php $array=[$name, $company, $text]; $val = mt_rand(0, count($array) - 1); echo $array[$val]; ?>
+
+<h2>IF-Case</h2>
+<?php $array=[
+ $randomElement < 10 ? "Hi" : "Goodbye",
+ $randomElement < 10 ? "Hi" : "Goodbye" , $text
+]; $val = mt_rand(0, count($array) - 1); echo $array[$val]; ?>
+
+<h2>IF-Case Complex</h2>
+<?php $array=[
+($randomElement < 10 ? "Hi" : ($randomElement < 10 ? ($randomElement < 10 ? "Hi" : ($randomElement < 10 ? "Hi" : ($randomElement < 10 ? "Hi" : "Goodbye"))) : "Goodbye")),
+($randomElement < 10 ? ($randomElement < 10 ? ($randomElement < 10 ? "Hi" : "Goodbye") : "Goodbye") : "Goodbye")
+]; $val = mt_rand(0, count($array) - 1); echo $array[$val]; ?>

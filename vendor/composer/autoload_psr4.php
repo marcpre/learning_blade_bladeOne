@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'eftec\\bladeone\\' => array($vendorDir . '/eftec/bladeone/lib'),
     'Noodlehaus\\' => array($vendorDir . '/hassankhan/config/src'),
+    'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );
