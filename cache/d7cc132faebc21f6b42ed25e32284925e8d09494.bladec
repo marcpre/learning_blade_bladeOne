@@ -1,0 +1,22 @@
+
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+<?php if($randomElement < 4): ?>
+ <?php echo static::e($randomElement); ?>
+
+<?php endif; ?>
+
+<?php if($randomElement < 5): ?>
+ <?php echo static::e($randomElement); ?>
+
+<?php endif; ?>
+
+
+<h1>Synonym</h1>
+
+<?php $array=["test1","test2","test3" ,"test0"]; $val = mt_rand(0, count($array) - 1); echo $array[$val]; ?>
+
+
+<h1>Display Data</h1>
+
+<?php echo static::e($randomElement); ?>
+

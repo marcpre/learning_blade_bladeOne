@@ -1,59 +1,134 @@
-Title
-Product 8
-3
-Category 1
-Price is SMALLER    
-######################### 
-Title
-Product 7
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
+7
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
+9
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test2
+
+<h1>Display Data</h1>
+
 5
-Category 8
-Price is SMALLER    
-######################### 
-Title
-Product 9
-10
-Category 8
-         
-Price is larger than 5        
-######################### 
-Title
-Product 9
-7
-Category 2
-         
-Price is larger than 5        
-######################### 
-Title
-Product 5
-7
-Category 9
-         
-Price is larger than 5        
-######################### 
-Title
-Product 5
-10
-Category 3
-         
-Price is larger than 5        
-######################### 
-Title
-Product 6
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 3
+
+ 3
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
+3
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
+9
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
+5
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+ 1
+
+ 1
+
+
+<h1>Synonym</h1>
+
+test0
+
+<h1>Display Data</h1>
+
 1
-Category 10
-Price is SMALLER    
-######################### 
-Title
-Product 5
-1
-Category 7
-Price is SMALLER    
-######################### 
-Title
-Product 5
-6
-Category 1
-         
-Price is larger than 5        
-######################### 
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test1
+
+<h1>Display Data</h1>
+
+9
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test3
+
+<h1>Display Data</h1>
+
+5
+
+ ######################### 
+<h1>Test Case 1 - Encapsuled If-Else</h1>
+
+
+
+<h1>Synonym</h1>
+
+test2
+
+<h1>Display Data</h1>
+
+7
+
+ ######################### 

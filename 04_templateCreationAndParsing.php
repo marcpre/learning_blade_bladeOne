@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-use eftec\bladeone;
+use eftec\bladeone\BladeOne;
 use Faker\Factory;
 
 
@@ -35,16 +35,26 @@ $filecontent = file_get_contents('htmlTemplate/templateFile.html', true);
  */
 function createBladeTemplate(string $str): string
 {
-    $str .= str_replace('<displayData data-display=\"', '{{', $str);
-    $str .= str_replace('\"></displayData>', "}}", $str);
+    // display data in blade with {{ }}
+    $str = str_replace('<displayData data-display="', '{{', $str);
+    $str = str_replace('"></displayData>', "}}", $str);
+    // synonym function
+    $str = str_replace('<synonym data-display=', "@synonym([", $str);
+    $str = str_replace('</synonym>', "\"])", $str);
+    $str = str_replace(', ', "\",\"", $str);
+    $str = str_replace('data-syn-end="">', ',"', $str);
+    // if function
+    $str = str_replace('<if data-condition="', "@if(", $str);
+    $str = str_replace('" data-ifend="">', ")", $str);
+    $str = str_replace('</if>', "@endif", $str);
     return $str;
 }
 
-$filecontent = createBladeTemplate($filecontent);
+$filecont = createBladeTemplate($filecontent);
 
 // save as view
 $tempFile = fopen("views/TEST_TEMPLATE.blade.php", "w");
-fwrite($tempFile, $filecontent);
+fwrite($tempFile, $filecont);
 
 /**
  * 3. Create view
@@ -62,7 +72,7 @@ foreach ($data as $key => $value) {
         return '<?php $array=' . $expression . '; $val = mt_rand(0, count($array) - 1); echo $array[$val]; ?>';
     });
 
-    $output = $blade->run("complexPost", $value);
+    $output = $blade->run("TEST_TEMPLATE", $value);
 
     $finalOutput .= $output;
     $finalOutput .= "\n ######################### \n";
